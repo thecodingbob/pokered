@@ -2,6 +2,9 @@ GainExperience:
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	ret z ; return if link battle
+	ld a, [wIsInBattle]
+	dec a ; is it a trainer battle?
+	ret z ; if not, don't give exp
 	call DivideExpDataByNumMonsGainingExp
 	ld hl, wPartyMon1
 	xor a
