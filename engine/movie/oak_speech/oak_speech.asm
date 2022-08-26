@@ -43,9 +43,9 @@ OakSpeech:
 	call SetDefaultNames
 	predef InitPlayerData2
 	ld hl, wNumBoxItems
-	ld a, POTION
+	ld a, RARE_CANDY
 	ld [wcf91], a
-	ld a, 1
+	ld a, 5
 	ld [wItemQuantity], a
 	call AddItemToInventory  ; give one potion
 	ld a, [wDefaultMap]
@@ -61,17 +61,6 @@ OakSpeech:
 	call IntroDisplayPicCenteredOrUpperRight
 	call FadeInIntroPic
 	ld hl, OakSpeechText1
-	call PrintText
-	call GBFadeOutToWhite
-	call ClearScreen
-	ld a, NIDORINO
-	ld [wd0b5], a
-	ld [wcf91], a
-	call GetMonHeader
-	hlcoord 6, 4
-	call LoadFlippedFrontSpriteByMonIndex
-	call MovePicLeft
-	ld hl, OakSpeechText2
 	call PrintText
 	call GBFadeOutToWhite
 	call ClearScreen
@@ -101,8 +90,6 @@ OakSpeech:
 	ld a, [wd72d]
 	and a
 	jr nz, .next
-	ld hl, OakSpeechText3
-	call PrintText
 .next
 	ldh a, [hLoadedROMBank]
 	push af
@@ -155,19 +142,11 @@ OakSpeech:
 OakSpeechText1:
 	text_far _OakSpeechText1
 	text_end
-OakSpeechText2:
-	text_far _OakSpeechText2A
-	sound_cry_nidorina
-	text_far _OakSpeechText2B
-	text_end
 IntroducePlayerText:
 	text_far _IntroducePlayerText
 	text_end
 IntroduceRivalText:
 	text_far _IntroduceRivalText
-	text_end
-OakSpeechText3:
-	text_far _OakSpeechText3
 	text_end
 
 FadeInIntroPic:

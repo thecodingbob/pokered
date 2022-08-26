@@ -31,6 +31,7 @@ OaksLab_ScriptPointers:
 	dw OaksLabScript18
 
 OaksLabScript0:
+	SetEvent EVENT_OAK_APPEARED_IN_PALLET; get starter on first lab
 	CheckEvent EVENT_OAK_APPEARED_IN_PALLET
 	ret z
 	ld a, [wNPCMovementScriptFunctionNum]

@@ -2,8 +2,8 @@ PewterMart_Object:
 	db $0 ; border block
 
 	def_warp_events
-	warp_event  3,  7, LAST_MAP, 5
-	warp_event  4,  7, LAST_MAP, 5
+	warp_event  3,  7, PEWTER_POKECENTER, 3
+	warp_event  4,  7, PEWTER_POKECENTER, 4
 
 	def_bg_events
 
