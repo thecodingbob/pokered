@@ -4,7 +4,7 @@ OaksLab_Object:
 	def_warp_events
 	warp_event  4, 11, REDS_HOUSE_2F, 1
 	warp_event  5, 11, REDS_HOUSE_2F, 1
-	warp_event  8, 8,  VIRIDIAN_FOREST, 3
+	warp_event  8, 8,  VIRIDIAN_CITY, 3
 
 	def_bg_events
 
