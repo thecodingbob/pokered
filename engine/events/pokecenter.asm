@@ -1,4 +1,5 @@
 DisplayPokemonCenterDialogue_::
+	call SetLastBlackoutMap; fixes last pokecenter not registered for some reason
 	call SaveScreenTilesToBuffer1 ; save screen
 	ld hl, PokemonCenterWelcomeText
 	call PrintText
