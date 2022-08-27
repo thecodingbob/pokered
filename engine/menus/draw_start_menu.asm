@@ -1,15 +1,9 @@
 ; function that displays the start menu
 DrawStartMenu::
-	CheckEvent EVENT_GOT_POKEDEX
-; menu with pokedex
 	hlcoord 10, 0
 	ld b, $0e
 	ld c, $08
 	jr nz, .drawTextBoxBorder
-; shorter menu if the player doesn't have the pokedex
-	hlcoord 10, 0
-	ld b, $0c
-	ld c, $08
 .drawTextBoxBorder
 	call TextBoxBorder
 	ld a, D_DOWN | D_UP | START | B_BUTTON | A_BUTTON
@@ -26,11 +20,6 @@ DrawStartMenu::
 	ld hl, wd730
 	set 6, [hl] ; no pauses between printing each letter
 	hlcoord 12, 2
-	CheckEvent EVENT_GOT_POKEDEX
-; case for not having pokedex
-	ld a, $06
-	jr z, .storeMenuItemCount
-; case for having pokedex
 	ld de, StartMenuPokedexText
 	call PrintStartMenuItem
 	ld a, $07
