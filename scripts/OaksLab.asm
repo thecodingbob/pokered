@@ -33,6 +33,15 @@ OaksLab_ScriptPointers:
 OaksLabScript0:
 	SetEvent EVENT_OAK_APPEARED_IN_PALLET; get starter on first lab entry
 	SetEvent EVENT_GOT_POKEDEX; set pokedex flax on first lab entry
+	; Activate Route 22 first rival battle without parcel quest
+	SetEvent EVENT_1ST_ROUTE22_RIVAL_BATTLE
+	ResetEventReuseHL EVENT_2ND_ROUTE22_RIVAL_BATTLE
+	SetEventReuseHL EVENT_ROUTE22_RIVAL_WANTS_BATTLE
+	ld a, HS_ROUTE_22_RIVAL_1
+	ld [wMissableObjectIndex], a
+	predef ShowObject
+	ld a, $5
+	; 
 	CheckEvent EVENT_OAK_APPEARED_IN_PALLET
 	ret z
 	ld a, [wNPCMovementScriptFunctionNum]
