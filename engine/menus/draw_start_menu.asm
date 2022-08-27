@@ -1,7 +1,7 @@
 ; function that displays the start menu
 DrawStartMenu::
 	hlcoord 10, 0
-	ld b, $0e
+	ld b, $10
 	ld c, $08
 	jr nz, .drawTextBoxBorder
 .drawTextBoxBorder
@@ -22,10 +22,12 @@ DrawStartMenu::
 	hlcoord 12, 2
 	ld de, StartMenuPokedexText
 	call PrintStartMenuItem
-	ld a, $07
+	ld a, $08
 .storeMenuItemCount
 	ld [wMaxMenuItem], a ; number of menu items
 	ld de, StartMenuPokemonText
+	call PrintStartMenuItem
+	ld de, StartMenuMapText
 	call PrintStartMenuItem
 	ld de, StartMenuItemText
 	call PrintStartMenuItem
@@ -53,6 +55,9 @@ StartMenuPokedexText:
 
 StartMenuPokemonText:
 	db "POKéMON@"
+
+StartMenuMapText:
+	db "MAP@"
 
 StartMenuItemText:
 	db "ITEM@"

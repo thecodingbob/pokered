@@ -299,6 +299,23 @@ ItemMenuLoop:
 	call LoadScreenTilesFromBuffer2DisableBGTransfer ; restore saved screen
 	call RunDefaultPaletteCommand
 
+StartMenu_Map::
+	call ClearScreen
+	call UpdateSprites
+	ldh a, [hTileAnimations]
+	push af
+	xor a
+	ldh [hTileAnimations], a
+	farcall DisplayTownMap
+	call LoadFontTilePatterns
+	call LoadScreenTilesFromBuffer2 ; restore saved screen
+	call RunDefaultPaletteCommand
+	call ReloadMapData
+	call LoadGBPal
+	pop af
+	ldh [hTileAnimations], a
+	jp RedisplayStartMenu
+
 StartMenu_Item::
 	ld a, [wLinkState]
 	dec a ; is the player in the Colosseum or Trade Centre?
