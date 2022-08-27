@@ -2,8 +2,8 @@ OaksLab_Object:
 	db $3 ; border block
 
 	def_warp_events
-	warp_event  4, 11, REDS_HOUSE_2F, 1
-	warp_event  5, 11, REDS_HOUSE_2F, 1
+	warp_event  4, 11, PALLET_TOWN, 3
+	warp_event  5, 11, PALLET_TOWN, 3
 	warp_event  8, 8,  VIRIDIAN_CITY, 3
 
 	def_bg_events
