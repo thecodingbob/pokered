@@ -2,7 +2,7 @@ PewterCity_Object:
 	db $a ; border block
 
 	def_warp_events
-	warp_event 14,  7, MUSEUM_1F, 1
+	warp_event 14,  7, MT_MOON_B2F, 1
 	warp_event 19,  5, MUSEUM_1F, 3
 	warp_event 16, 17, PEWTER_GYM, 1
 	warp_event 29, 13, PEWTER_NIDORAN_HOUSE, 1
@@ -22,7 +22,7 @@ PewterCity_Object:
 	def_object_events
 	object_event  8, 15, SPRITE_COOLTRAINER_F, STAY, NONE, 1 ; person
 	object_event 17, 25, SPRITE_COOLTRAINER_M, STAY, NONE, 2 ; person
-	object_event 27, 17, SPRITE_SUPER_NERD, STAY, NONE, 3 ; person
+	object_event 28, 17, SPRITE_SUPER_NERD, STAY, NONE, 3 ; person
 	object_event 26, 25, SPRITE_SUPER_NERD, WALK, LEFT_RIGHT, 4 ; person
 	object_event 35, 16, SPRITE_YOUNGSTER, STAY, DOWN, 5 ; person
 
