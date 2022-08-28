@@ -1,5 +1,5 @@
 ViridianForestWildMons:
-	def_grass_wildmons 8 ; encounter rate
+	def_grass_wildmons 50 ; encounter rate
 IF DEF(_RED)
 	db  4, WEEDLE
 	db  5, KAKUNA
