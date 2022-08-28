@@ -10,7 +10,7 @@ CeruleanCity_Object:
 	warp_event 25, 25, CERULEAN_MART, 1
 	warp_event  4, 11, CERULEAN_CAVE_1F, 1
 	warp_event 27,  9, CERULEAN_TRASHED_HOUSE, 3
-	warp_event  9, 11, CERULEAN_BADGE_HOUSE, 2
+	warp_event  9, 11, UNDERGROUND_PATH_ROUTE_6, 3
 	warp_event  9,  9, CERULEAN_BADGE_HOUSE, 1
 
 	def_bg_events
@@ -25,7 +25,7 @@ CeruleanCity_Object:
 	object_event 20,  2, SPRITE_BLUE, STAY, DOWN, 1 ; person
 	object_event 30,  8, SPRITE_ROCKET, STAY, NONE, 2, OPP_ROCKET, 5
 	object_event 13, 16, SPRITE_COOLTRAINER_M, STAY, DOWN, 3 ; person
-	object_event 12, 18, SPRITE_SUPER_NERD, WALK, UP_DOWN, 4 ; person
+	object_event 15, 18, SPRITE_SUPER_NERD, WALK, UP_DOWN, 4 ; person
 	object_event  9, 21, SPRITE_SUPER_NERD, WALK, LEFT_RIGHT, 5 ; person
 	object_event 28, 12, SPRITE_GUARD, STAY, DOWN, 6 ; person
 	object_event 29, 26, SPRITE_COOLTRAINER_F, STAY, LEFT, 7 ; person
