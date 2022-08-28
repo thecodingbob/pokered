@@ -3,7 +3,7 @@ LavenderTown_Object:
 
 	def_warp_events
 	warp_event  3,  5, LAVENDER_POKECENTER, 1
-	warp_event 14,  5, POKEMON_TOWER_1F, 1
+	warp_event 14,  5, POKEMON_TOWER_2F, 2
 	warp_event  7,  9, ROCK_TUNNEL_1F, 8
 	warp_event 15, 13, LAVENDER_MART, 1
 	warp_event  3, 13, LAVENDER_CUBONE_HOUSE, 1
@@ -19,7 +19,7 @@ LavenderTown_Object:
 
 	def_object_events
 	object_event 15,  9, SPRITE_LITTLE_GIRL, WALK, ANY_DIR, 1 ; person
-	object_event  9, 10, SPRITE_COOLTRAINER_M, STAY, NONE, 2 ; person
+	object_event  3, 14, SPRITE_COOLTRAINER_M, STAY, NONE, 2 ; person
 	object_event  8,  7, SPRITE_SUPER_NERD, WALK, LEFT_RIGHT, 3 ; person
 
 	def_warps_to LAVENDER_TOWN

@@ -9,7 +9,7 @@ RockTunnel1F_Object:
 	warp_event 37,  3, VERMILION_CITY, 8
 	warp_event  5,  3, ROCK_TUNNEL_B1F, 2
 	warp_event 17, 11, ROCK_TUNNEL_B1F, 3
-	warp_event 37,  7, LAVENDER_TOWN, 3
+	warp_event 37,  5, LAVENDER_TOWN, 3
 
 	def_bg_events
 	bg_event 11, 29, 8 ; RockTunnel1Text8
