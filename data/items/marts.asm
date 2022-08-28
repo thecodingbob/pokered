@@ -2,7 +2,7 @@
 ; they are texts
 
 ViridianCashierText::
-	script_mart POKE_BALL, ANTIDOTE, PARLYZ_HEAL, BURN_HEAL
+	script_mart POKE_BALL, ANTIDOTE, PARLYZ_HEAL, BURN_HEAL, RARE_CANDY
 
 PewterCashierText::
 	script_mart POKE_BALL, POTION, RARE_CANDY, ANTIDOTE, BURN_HEAL, AWAKENING, PARLYZ_HEAL
