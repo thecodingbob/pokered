@@ -2,7 +2,7 @@ PewterCity_Object:
 	db $a ; border block
 
 	def_warp_events
-	warp_event 14,  7, MT_MOON_B2F, 1
+	warp_event 14,  7, MT_MOON_B2F, 3
 	warp_event 19,  5, MUSEUM_1F, 3
 	warp_event 16, 17, PEWTER_GYM, 1
 	warp_event 29, 13, PEWTER_NIDORAN_HOUSE, 1
