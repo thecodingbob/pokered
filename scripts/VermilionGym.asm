@@ -7,6 +7,7 @@ VermilionGym_Script:
 	pop hl
 	bit 6, [hl]
 	res 6, [hl]
+	SetEvent EVENT_2ND_LOCK_OPENED ; skip puzzle
 	call nz, VermilionGymSetDoorTile
 	call EnableAutoTextBoxDrawing
 	ld hl, VermilionGymTrainerHeaders

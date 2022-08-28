@@ -6,7 +6,7 @@ Route11_Object:
 	warp_event 49,  9, ROUTE_11_GATE_1F, 2
 	warp_event 58,  8, ROUTE_11_GATE_1F, 3
 	warp_event 58,  9, ROUTE_11_GATE_1F, 4
-	warp_event  4,  5, DIGLETTS_CAVE_ROUTE_11, 1
+	warp_event  4,  5, DIGLETTS_CAVE, 2
 
 	def_bg_events
 	bg_event  1,  5, 11 ; Route11Text11

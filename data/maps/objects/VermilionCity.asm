@@ -10,7 +10,7 @@ VermilionCity_Object:
 	warp_event 18, 31, VERMILION_DOCK, 1
 	warp_event 19, 31, VERMILION_DOCK, 1
 	warp_event 15, 13, VERMILION_TRADE_HOUSE, 1
-	warp_event  7,  3, VERMILION_OLD_ROD_HOUSE, 1
+	warp_event  7,  3, SS_ANNE_2F, 7
 
 	def_bg_events
 	bg_event 27,  3,  7 ; VermilionCityText7
@@ -23,8 +23,8 @@ VermilionCity_Object:
 
 	def_object_events
 	object_event 19,  7, SPRITE_BEAUTY, WALK, LEFT_RIGHT, 1 ; person
-	object_event 14,  6, SPRITE_GAMBLER, STAY, NONE, 2 ; person
-	object_event 19, 30, SPRITE_SAILOR, STAY, UP, 3 ; person
+	object_event  9, 14, SPRITE_GAMBLER, STAY, NONE, 2 ; person
+	object_event 39, 35, SPRITE_SAILOR, STAY, UP, 3 ; person
 	object_event 30,  7, SPRITE_GAMBLER, STAY, NONE, 4 ; person
 	object_event 29,  9, SPRITE_MONSTER, WALK, UP_DOWN, 5 ; person
 	object_event 25, 27, SPRITE_SAILOR, WALK, LEFT_RIGHT, 6 ; person
