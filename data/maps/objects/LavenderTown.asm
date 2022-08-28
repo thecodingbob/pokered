@@ -7,7 +7,7 @@ LavenderTown_Object:
 	warp_event  7,  9, ROCK_TUNNEL_1F, 8
 	warp_event 15, 13, LAVENDER_MART, 1
 	warp_event  3, 13, LAVENDER_CUBONE_HOUSE, 1
-	warp_event  7, 13, NAME_RATERS_HOUSE, 1
+	warp_event  7, 13, UNDERGROUND_PATH_ROUTE_7, 3
 
 	def_bg_events
 	bg_event 11,  9, 4 ; LavenderTownText4

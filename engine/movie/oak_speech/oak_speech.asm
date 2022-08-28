@@ -48,6 +48,11 @@ OakSpeech:
 	ld a, 5
 	ld [wItemQuantity], a
 	call AddItemToInventory  ; give one potion
+	ld a, COIN_CASE
+	ld [wcf91], a
+	ld a, 1
+	ld [wItemQuantity], a
+	call AddItemToInventory  ; give one potion
 	ld a, [wDefaultMap]
 	ld [wDestinationMap], a
 	call SpecialWarpIn

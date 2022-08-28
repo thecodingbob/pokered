@@ -28,6 +28,7 @@ CeladonGameCornerScript_48bec:
 	bit 5, [hl]
 	res 5, [hl]
 	ret z
+	SetEvent EVENT_FOUND_ROCKET_HIDEOUT ; immediately open
 	CheckEvent EVENT_FOUND_ROCKET_HIDEOUT
 	ret nz
 	ld a, $2a
