@@ -9,7 +9,7 @@ VermilionCity_Object:
 	warp_event 23, 19, VERMILION_PIDGEY_HOUSE, 1
 	warp_event 18, 31, VERMILION_DOCK, 1
 	warp_event 19, 31, VERMILION_DOCK, 1
-	warp_event 15, 13, VERMILION_TRADE_HOUSE, 1
+	warp_event 15, 13, ROCK_TUNNEL_1F, 5
 	warp_event  7,  3, SS_ANNE_2F, 7
 
 	def_bg_events

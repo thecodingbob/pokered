@@ -4,7 +4,7 @@ Route10_Object:
 	def_warp_events
 	warp_event 11, 19, ROCK_TUNNEL_POKECENTER, 1
 	warp_event  8, 17, ROCK_TUNNEL_1F, 1
-	warp_event  8, 53, ROCK_TUNNEL_1F, 3
+	warp_event  4,  7, VERMILION_CITY, 8
 	warp_event  6, 39, POWER_PLANT, 1
 
 	def_bg_events
