@@ -52,7 +52,12 @@ OakSpeech:
 	ld [wcf91], a
 	ld a, 1
 	ld [wItemQuantity], a
-	call AddItemToInventory  ; give one potion
+	call AddItemToInventory  ; give coin case
+	ld a, POKE_FLUTE
+	ld [wcf91], a
+	ld a, 1
+	ld [wItemQuantity], a
+	call AddItemToInventory  ; give poke flute
 	ld a, [wDefaultMap]
 	ld [wDestinationMap], a
 	call SpecialWarpIn

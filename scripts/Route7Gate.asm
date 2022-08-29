@@ -52,8 +52,8 @@ Route7GateScript0:
 	ret
 
 CoordsData_1e167:
-	dbmapcoord  3,  3
-	dbmapcoord  3,  4
+	dbmapcoord  9,  9
+	dbmapcoord  9,  9
 	db -1 ; end
 
 Route7GateScript1:
