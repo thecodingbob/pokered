@@ -5,7 +5,7 @@ SeafoamIslandsB4F_Object:
 	warp_event 20, 17, SEAFOAM_ISLANDS_B3F, 6
 	warp_event 21, 17, SEAFOAM_ISLANDS_B3F, 7
 	warp_event 11,  7, SEAFOAM_ISLANDS_B3F, 2
-	warp_event 25,  4, SEAFOAM_ISLANDS_B3F, 3
+	warp_event  9,  2, FUCHSIA_CITY, 4
 
 	def_bg_events
 	bg_event  9, 15, 4 ; SeafoamIslands5Text4

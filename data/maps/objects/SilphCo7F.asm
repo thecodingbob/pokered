@@ -6,7 +6,7 @@ SilphCo7F_Object:
 	warp_event 22,  0, SILPH_CO_6F, 1
 	warp_event 18,  0, SILPH_CO_ELEVATOR, 1
 	warp_event  5,  7, SILPH_CO_11F, 4
-	warp_event  5,  3, SILPH_CO_3F, 9
+	warp_event  5,  3, SAFFRON_CITY, 6
 	warp_event 21, 15, SILPH_CO_5F, 4
 
 	def_bg_events
@@ -21,7 +21,7 @@ SilphCo7F_Object:
 	object_event 20,  2, SPRITE_ROCKET, STAY, LEFT, 7, OPP_ROCKET, 33
 	object_event 19, 14, SPRITE_ROCKET, STAY, RIGHT, 8, OPP_ROCKET, 34
 	object_event  3,  7, SPRITE_BLUE, STAY, UP, 9 ; person
-	object_event  1,  9, SPRITE_POKE_BALL, STAY, NONE, 10, CALCIUM
-	object_event 24, 11, SPRITE_POKE_BALL, STAY, NONE, 11, TM_SWORDS_DANCE
+	object_event  1,  1, SPRITE_POKE_BALL, STAY, NONE, 10, RARE_CANDY
+	object_event  3,  1, SPRITE_POKE_BALL, STAY, NONE, 11, TM_SWORDS_DANCE
 
 	def_warps_to SILPH_CO_7F

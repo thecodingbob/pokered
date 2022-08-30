@@ -7,9 +7,9 @@ SaffronCity_Object:
 	warp_event 34,  3, SAFFRON_GYM, 1
 	warp_event 13, 11, SAFFRON_PIDGEY_HOUSE, 1
 	warp_event 25, 11, SAFFRON_MART, 1
-	warp_event 18, 21, SILPH_CO_1F, 1
+	warp_event 18, 21, SILPH_CO_7F, 5
 	warp_event  9, 29, SAFFRON_POKECENTER, 1
-	warp_event 29, 29, MR_PSYCHICS_HOUSE, 1
+	warp_event 29, 29, ROUTE_15_GATE_1F, 3
 
 	def_bg_events
 	bg_event 17,  5, 16 ; SaffronCityText16

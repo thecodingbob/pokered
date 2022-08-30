@@ -16,6 +16,7 @@ SilphCo11Script_62110:
 	ld hl, SilphCo11GateCoords
 	call SilphCo11Script_62137
 	call SilphCo11Script_62163
+	SetEvent EVENT_SILPH_CO_11_UNLOCKED_DOOR; immediately unlock door
 	CheckEvent EVENT_SILPH_CO_11_UNLOCKED_DOOR
 	ret nz
 	ld a, $20
