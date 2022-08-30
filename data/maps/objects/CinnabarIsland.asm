@@ -4,7 +4,7 @@ CinnabarIsland_Object:
 	def_warp_events
 	warp_event  6,  3, POKEMON_MANSION_1F, 2
 	warp_event 18,  3, CINNABAR_GYM, 1
-	warp_event  6,  9, CINNABAR_LAB, 1
+	warp_event  6,  9, CINNABAR_LAB_FOSSIL_ROOM, 1
 	warp_event 11, 11, CINNABAR_POKECENTER, 1
 	warp_event 15, 11, CINNABAR_MART, 1
 

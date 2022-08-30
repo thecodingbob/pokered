@@ -1,7 +1,3 @@
-_CinnabarIslandText8::
-	text "The door is"
-	line "locked..."
-	done
 
 _CinnabarIslandText1::
 	text "CINNABAR GYM's"

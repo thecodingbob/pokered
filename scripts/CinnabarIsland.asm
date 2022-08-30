@@ -9,37 +9,7 @@ CinnabarIsland_Script:
 	jp CallFunctionInTable
 
 CinnabarIsland_ScriptPointers:
-	dw CinnabarIslandScript0
 	dw CinnabarIslandScript1
-
-CinnabarIslandScript0:
-	ld b, SECRET_KEY
-	call IsItemInBag
-	ret nz
-	ld a, [wYCoord]
-	cp 4
-	ret nz
-	ld a, [wXCoord]
-	cp 18
-	ret nz
-	ld a, PLAYER_DIR_UP
-	ld [wPlayerMovingDirection], a
-	ld a, $8
-	ldh [hSpriteIndexOrTextID], a
-	call DisplayTextID
-	xor a
-	ldh [hJoyHeld], a
-	ld a, $1
-	ld [wSimulatedJoypadStatesIndex], a
-	ld a, D_DOWN
-	ld [wSimulatedJoypadStatesEnd], a
-	call StartSimulatingJoypadStates
-	xor a
-	ld [wSpritePlayerStateData1FacingDirection], a
-	ld [wJoyIgnore], a
-	ld a, $1
-	ld [wCinnabarIslandCurScript], a
-	ret
 
 CinnabarIslandScript1:
 	ld a, [wSimulatedJoypadStatesIndex]
@@ -58,11 +28,6 @@ CinnabarIsland_TextPointers:
 	dw PokeCenterSignText
 	dw CinnabarIslandText6
 	dw CinnabarIslandText7
-	dw CinnabarIslandText8
-
-CinnabarIslandText8:
-	text_far _CinnabarIslandText8
-	text_end
 
 CinnabarIslandText1:
 	text_far _CinnabarIslandText1

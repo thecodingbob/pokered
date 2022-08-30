@@ -3,7 +3,7 @@ FuchsiaCity_Object:
 
 	def_warp_events
 	warp_event 15, 27, FUCHSIA_MART, 1
-	warp_event 11, 27, FUCHSIA_BILLS_GRANDPAS_HOUSE, 1
+	warp_event 11, 27, POKEMON_MANSION_1F, 5
 	warp_event 19, 27, FUCHSIA_POKECENTER, 1
 	warp_event 27, 27, SEAFOAM_ISLANDS_B4F, 4
 	warp_event 18,  3, SAFARI_ZONE_GATE, 1

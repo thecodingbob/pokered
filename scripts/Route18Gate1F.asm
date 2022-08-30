@@ -43,11 +43,11 @@ Route18GateScript0:
 	ld [wRoute18Gate1FCurScript], a
 	ret
 
-CoordsData_498cc:
-	dbmapcoord  4,  3
-	dbmapcoord  4,  4
-	dbmapcoord  4,  5
-	dbmapcoord  4,  6
+CoordsData_498cc: ; invalidating bike check
+	dbmapcoord  99,  99
+	dbmapcoord  99,  99
+	dbmapcoord  99,  99
+	dbmapcoord  99,  99
 	db -1 ; end
 
 Route18GateScript1:

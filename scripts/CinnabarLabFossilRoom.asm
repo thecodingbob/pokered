@@ -57,6 +57,8 @@ Lab4Text1:
 	and a
 	jr z, .asm_75d8d
 	farcall GiveFossilToCinnabarLab
+	CheckEvent EVENT_GAVE_FOSSIL_TO_LAB
+	jr nz, .asm_75da2
 	jr .asm_75d93
 .asm_75d8d
 	ld hl, Lab4Text_75dcb

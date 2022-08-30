@@ -35,9 +35,6 @@ ViridianGymScript0:
 	ld b, a
 	ld a, [wXCoord]
 	ld c, a
-	ld hl, ViridianGymArrowTilePlayerMovement
-	call DecodeArrowMovementRLE
-	cp $ff
 	jp z, CheckFightingMapTrainers
 	call StartSimulatingJoypadStates
 	ld hl, wd736
@@ -49,21 +46,6 @@ ViridianGymScript0:
 	ld a, $4
 	ld [wCurMapScript], a
 	ret
-
-ViridianGymArrowTilePlayerMovement:
-	map_coord_movement 19, 11, ViridianGymArrowMovement1
-	map_coord_movement 19,  1, ViridianGymArrowMovement2
-	map_coord_movement 18,  2, ViridianGymArrowMovement3
-	map_coord_movement 11,  2, ViridianGymArrowMovement4
-	map_coord_movement 16, 10, ViridianGymArrowMovement5
-	map_coord_movement  4,  6, ViridianGymArrowMovement6
-	map_coord_movement  5, 13, ViridianGymArrowMovement7
-	map_coord_movement  4, 14, ViridianGymArrowMovement8
-	map_coord_movement  0, 15, ViridianGymArrowMovement9
-	map_coord_movement  1, 15, ViridianGymArrowMovement10
-	map_coord_movement 13, 16, ViridianGymArrowMovement11
-	map_coord_movement 13, 17, ViridianGymArrowMovement12
-	db -1 ; end
 
 ViridianGymArrowMovement1:
 	db D_UP, 9
@@ -185,21 +167,21 @@ ViridianGym_TextPointers:
 ViridianGymTrainerHeaders:
 	def_trainers 2
 ViridianGymTrainerHeader0:
-	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0, 4, ViridianGymBattleText1, ViridianGymEndBattleText1, ViridianGymAfterBattleText1
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0, 2, ViridianGymBattleText1, ViridianGymEndBattleText1, ViridianGymAfterBattleText1
 ViridianGymTrainerHeader1:
-	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1, 4, ViridianGymBattleText2, ViridianGymEndBattleText2, ViridianGymAfterBattleText2
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1, 2, ViridianGymBattleText2, ViridianGymEndBattleText2, ViridianGymAfterBattleText2
 ViridianGymTrainerHeader2:
-	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2, 4, ViridianGymBattleText3, ViridianGymEndBattleText3, ViridianGymAfterBattleText3
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2, 2, ViridianGymBattleText3, ViridianGymEndBattleText3, ViridianGymAfterBattleText3
 ViridianGymTrainerHeader3:
 	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3, 2, ViridianGymBattleText4, ViridianGymEndBattleText4, ViridianGymAfterBattleText4
 ViridianGymTrainerHeader4:
-	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_4, 3, ViridianGymBattleText5, ViridianGymEndBattleText5, ViridianGymAfterBattleText5
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_4, 2, ViridianGymBattleText5, ViridianGymEndBattleText5, ViridianGymAfterBattleText5
 ViridianGymTrainerHeader5:
-	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_5, 4, ViridianGymBattleText6, ViridianGymEndBattleText6, ViridianGymAfterBattleText6
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_5, 2, ViridianGymBattleText6, ViridianGymEndBattleText6, ViridianGymAfterBattleText6
 ViridianGymTrainerHeader6:
-	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_6, 3, ViridianGymBattleText7, ViridianGymEndBattleText7, ViridianGymAfterBattleText7
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_6, 2, ViridianGymBattleText7, ViridianGymEndBattleText7, ViridianGymAfterBattleText7
 ViridianGymTrainerHeader7:
-	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7, 4, ViridianGymBattleText8, ViridianGymEndBattleText8, ViridianGymAfterBattleText8
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7, 2, ViridianGymBattleText8, ViridianGymEndBattleText8, ViridianGymAfterBattleText8
 	db -1 ; end
 
 GiovanniText:

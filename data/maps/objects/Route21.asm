@@ -2,6 +2,7 @@ Route21_Object:
 	db $43 ; border block
 
 	def_warp_events
+	warp_event 11, 87, ROUTE_18_GATE_1F, 1
 
 	def_bg_events
 
