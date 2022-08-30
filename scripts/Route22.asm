@@ -77,6 +77,8 @@ Route22Script0:
 .Route22RivalBattleCoords
 	dbmapcoord 29,  4
 	dbmapcoord 29,  5
+	dbmapcoord 8,  12
+	dbmapcoord 8,  13
 	db -1 ; end
 
 .firstRivalBattle

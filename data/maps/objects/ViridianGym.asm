@@ -2,8 +2,9 @@ ViridianGym_Object:
 	db $3 ; border block
 
 	def_warp_events
-	warp_event 16, 17, LAST_MAP, 5
-	warp_event 17, 17, LAST_MAP, 5
+	warp_event 16, 17, VIRIDIAN_CITY, 5
+	warp_event 17, 17, VIRIDIAN_CITY, 5
+	warp_event 4,   2, ROUTE_2_GATE, 3
 
 	def_bg_events
 

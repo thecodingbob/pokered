@@ -61,13 +61,13 @@ Route23Script0:
 	ret
 
 YCoordsData_51255:
-	db 35
-	db 56
-	db 85
-	db 96
-	db 105
-	db 119
+	db 132
+	db 133
+	db 134
+	db 135
 	db 136
+	db 137
+	db 138
 	db -1 ; end
 
 Route23Script_5125d:
