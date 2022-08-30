@@ -2,8 +2,8 @@ MtMoonPokecenter_Object:
 	db $0 ; border block
 
 	def_warp_events
-	warp_event  3,  7, LAST_MAP, 1
-	warp_event  4,  7, LAST_MAP, 1
+	warp_event  3,  7, VIRIDIAN_CITY, 7
+	warp_event  4,  7, VIRIDIAN_CITY, 7
 
 	def_bg_events
 

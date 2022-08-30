@@ -8,6 +8,7 @@ ViridianCity_Object:
 	warp_event 21,  9, VIRIDIAN_FOREST, 3
 	warp_event 34,  7, VIRIDIAN_GYM, 1
 	warp_event 28,  1, ROUTE_18_GATE_1F, 3
+	warp_event 25,  7, MT_MOON_POKECENTER, 1
 
 	def_bg_events
 	bg_event 17, 17,  8 ; ViridianCityText8
