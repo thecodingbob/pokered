@@ -850,24 +850,6 @@ OaksLabText39:
 	text_end
 
 OaksLabScript_1d157:
-	ld a, $5
-	ldh [hSpriteIndex], a
-	ld a, SPRITESTATEDATA1_FACINGDIRECTION
-	ldh [hSpriteDataOffset], a
-	call GetPointerWithinSpriteStateData1
-	ld [hl], SPRITE_FACING_DOWN
-	ld a, $1
-	ldh [hSpriteIndex], a
-	ld a, SPRITESTATEDATA1_FACINGDIRECTION
-	ldh [hSpriteDataOffset], a
-	call GetPointerWithinSpriteStateData1
-	ld [hl], SPRITE_FACING_RIGHT
-	ld hl, wd730
-	set 6, [hl]
-	predef StarterDex
-	ld hl, wd730
-	res 6, [hl]
-	call ReloadMapData
 	ld c, 10
 	call DelayFrames
 	ld a, [wSpriteIndex]

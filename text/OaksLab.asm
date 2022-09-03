@@ -5,12 +5,12 @@ _OaksLabGaryText1::
 	done
 
 _OaksLabText40::
-	text "<RIVAL>: Heh, I"
-	line "don't need to be"
-	cont "greedy like you!"
+	text "<RIVAL>: Have you"
+	line "realized this is"
+	cont "a boss rush?"
 
-	para "Go ahead and"
-	line "choose, <PLAYER>!"
+	para "Stop wasting"
+	line "time and choose!"
 	done
 
 _OaksLabText41::
@@ -26,26 +26,22 @@ _OaksLabText39::
 	done
 
 _OaksLabCharmanderText::
-	text "So! You want the"
-	line "fire #MON,"
-	cont "CHARMANDER?"
+	text "You want"
+	line "CHARMANDER?"
 	done
 
 _OaksLabSquirtleText::
-	text "So! You want the"
-	line "water #MON,"
-	cont "SQUIRTLE?"
+	text "You want"
+	line "SQUIRTLE?"
 	done
 
 _OaksLabBulbasaurText::
-	text "So! You want the"
-	line "plant #MON,"
-	cont "BULBASAUR?"
+	text "You want"
+	line "BULBASAUR?"
 	done
 
 _OaksLabMonEnergeticText::
-	text "This #MON is"
-	line "really energetic!"
+	text "Ok, now go!"
 	prompt
 
 _OaksLabReceivedMonText::
@@ -109,8 +105,8 @@ _OaksLabDeliverParcelText2::
 	done
 
 _OaksLabAroundWorldText::
-	text "#MON around the"
-	line "world wait for"
+	text "Brock is already"
+	line "waiting for"
 	cont "you, <PLAYER>!"
 	done
 
@@ -165,9 +161,9 @@ _OaksLabText_1d31d::
 	prompt
 
 _OaksLabText_1d32c::
-	text "It's encyclopedia-"
-	line "like, but the"
-	cont "pages are blank!"
+	text "It's a Pokédex."
+	line "You already"
+	cont "have one!"
 	done
 
 _OaksLabText8::
@@ -185,31 +181,29 @@ _OaksLabText_1d340::
 	done
 
 _OaksLabRivalWaitingText::
-	text "<RIVAL>: Gramps!"
-	line "I'm fed up with"
-	cont "waiting!"
+	text "<RIVAL>: Yo!"
 	done
 
 _OaksLabChooseMonText::
-	text "Choose a"
+	text "OAK: Choose a"
 	line "#MON."
 	done
 
 _OaksLabRivalInterjectionText::
-	text "<RIVAL>: Hey!"
-	line "Gramps! What"
-	cont "about me?"
+	text "<RIVAL>: Hurry!"
 	done
 
 _OaksLabBePatientText::
-	text "OAK: Be patient!"
-	line "<RIVAL>, you can"
-	cont "have one too!"
+	text "OAK: Yeah,"
+	line "hurry."
 	done
 
 _OaksLabLeavingText::
-	text "OAK: Hey! Don't go"
-	line "away yet!"
+	text "OAK: ..."
+	line "You know how this"
+	cont "goes. Choose your"
+	para "starter and get"
+	line "moving."
 	done
 
 _OaksLabRivalPickingMonText::
