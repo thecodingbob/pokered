@@ -41,6 +41,7 @@ HallofFameRoomScript2:
 	ld [wHallOfFameCurScript], a
 	; Elite 4 events
 	ResetEventRange ELITE4_EVENTS_START, ELITE4_CHAMPION_EVENTS_END, 1
+	ResetEvent EVENT_BEAT_OAK
 	xor a
 	ld [wHallOfFameCurScript], a
 	ld a, PALLET_TOWN
