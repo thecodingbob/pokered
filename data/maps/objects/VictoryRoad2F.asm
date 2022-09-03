@@ -2,7 +2,7 @@ VictoryRoad2F_Object:
 	db $7d ; border block
 
 	def_warp_events
-	warp_event 14,  6, INDIGO_PLATEAU_LOBBY, 1
+	warp_event 14,  6, ROUTE_23, 5
 	warp_event 29,  7, ROUTE_22, 1
 	warp_event 29,  8, ROUTE_22, 1
 	warp_event 23,  7, VICTORY_ROAD_3F, 1

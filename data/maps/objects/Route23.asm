@@ -6,6 +6,8 @@ Route23_Object:
 	warp_event  8, 139, ROUTE_22_GATE, 4
 	warp_event  7, 131, VICTORY_ROAD_2F, 7
 	warp_event  8, 131, VICTORY_ROAD_2F, 7
+	warp_event  14, 5,  VICTORY_ROAD_2F, 1
+
 
 	def_bg_events
 	bg_event  3, 33, 8 ; Route23Text8

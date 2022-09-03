@@ -2,8 +2,8 @@ IndigoPlateauLobby_Object:
 	db $0 ; border block
 
 	def_warp_events
-	warp_event  7, 11, VICTORY_ROAD_2F, 1
-	warp_event  8, 11, VICTORY_ROAD_2F, 1
+	warp_event  7, 11, LAST_MAP, 1
+	warp_event  8, 11, LAST_MAP, 2
 	warp_event  8,  0, LORELEIS_ROOM, 1
 	warp_event  12, 4, CELADON_MART_1F, 1
 	warp_event  14, 4, CELADON_MART_1F, 3
