@@ -1,10 +1,11 @@
 OakFightRoom_Object:
-	db $f ; border block
+	db $3 ; border block
 
 	def_warp_events
-	warp_event  2,  7, CHAMPIONS_ROOM, 3
-	warp_event  3,  7, CHAMPIONS_ROOM, 4
-	warp_event  0,  1, HALL_OF_FAME, 1
+	warp_event  3,  7, CHAMPIONS_ROOM, 3
+	warp_event  4,  7, CHAMPIONS_ROOM, 4
+	warp_event  3,  0, HALL_OF_FAME, 1
+	warp_event  4,  0, HALL_OF_FAME, 2
 
 	def_bg_events
 
