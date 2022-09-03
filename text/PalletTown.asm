@@ -18,12 +18,12 @@ _OakWalksUpText::
 	done
 
 _PalletTownText2::
-	text "I'm raising"
-	line "#MON too!"
+	text "What are you"
+	line "waiting for?"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "Go to Oak's"
+	line "lab to get your"
+	cont "starter!"
 	done
 
 _PalletTownText3::
@@ -48,7 +48,8 @@ _PalletTownText5::
 	done
 
 _PalletTownText6::
-	text "<PLAYER>'s house "
+	text "Don't forget to"
+	line "check your PC."
 	done
 
 _PalletTownText7::

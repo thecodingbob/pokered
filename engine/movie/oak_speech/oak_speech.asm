@@ -66,20 +66,10 @@ OakSpeech:
 	ld a, [wd732]
 	bit 1, a ; possibly a debug mode bit
 	jp nz, .skipChoosingNames
-	ld de, ProfOakPic
-	lb bc, BANK(ProfOakPic), $00
-	call IntroDisplayPicCenteredOrUpperRight
-	call FadeInIntroPic
-	ld hl, OakSpeechText1
-	call PrintText
-	call GBFadeOutToWhite
-	call ClearScreen
 	ld de, RedPicFront
 	lb bc, BANK(RedPicFront), $00
 	call IntroDisplayPicCenteredOrUpperRight
 	call MovePicLeft
-	ld hl, IntroducePlayerText
-	call PrintText
 	call ChoosePlayerName
 	call GBFadeOutToWhite
 	call ClearScreen
@@ -87,8 +77,6 @@ OakSpeech:
 	lb bc, BANK(Rival1Pic), $00
 	call IntroDisplayPicCenteredOrUpperRight
 	call FadeInIntroPic
-	ld hl, IntroduceRivalText
-	call PrintText
 	call ChooseRivalName
 .skipChoosingNames
 	call GBFadeOutToWhite
