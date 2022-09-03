@@ -140,7 +140,7 @@ MapHeaderPointers::
 	dw CeladonMart5F_h
 	dw GameCornerPrizeRoom_h
 	dw CeladonDiner_h
-	dw CeladonChiefHouse_h
+	dw OakFightRoom_h
 	dw CeladonHotel_h
 	dw LavenderPokecenter_h
 	dw PokemonTower1F_h

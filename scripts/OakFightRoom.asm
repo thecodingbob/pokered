@@ -1,4 +1,4 @@
-CeladonChiefHouse_Script:
+OakFightRoom_Script:
    call EnableAutoTextBoxDrawing
    ld hl, OakFightRoomTrainerHeader0
    ld de, OakFightRoom_ScriptPointers
@@ -7,7 +7,7 @@ CeladonChiefHouse_Script:
    ld [wOakFightRoomCurScript], a
    ret
 
-CeladonChiefHouse_TextPointers:
+OakFightRoom_TextPointers:
 	dw OakFightRoomText1
 
 OakFightRoom_ScriptPointers:

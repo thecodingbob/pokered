@@ -158,7 +158,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	mapconst CELADON_MART_5F,                4, 10 ; $88
 	mapconst GAME_CORNER_PRIZE_ROOM,         4,  5 ; $89
 	mapconst CELADON_DINER,                  4,  5 ; $8A
-	mapconst CELADON_CHIEF_HOUSE,            4,  4 ; $8B
+	mapconst OAK_FIGHT_ROOM,            	 4,  4 ; $8B
 	mapconst CELADON_HOTEL,                  4,  7 ; $8C
 	mapconst LAVENDER_POKECENTER,            4,  7 ; $8D
 	mapconst POKEMON_TOWER_1F,               9, 10 ; $8E

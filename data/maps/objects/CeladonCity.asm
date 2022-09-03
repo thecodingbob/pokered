@@ -13,7 +13,7 @@ CeladonCity_Object:
 	warp_event 39, 19, CELADON_MART_5F, 1
 	warp_event 33, 19, GAME_CORNER_PRIZE_ROOM, 1
 	warp_event 31, 27, ROUTE_7_GATE, 1
-	warp_event 35, 27, CELADON_CHIEF_HOUSE, 1
+	warp_event 35, 27, OAK_FIGHT_ROOM, 1
 	warp_event 43, 27, CELADON_HOTEL, 1
 
 	def_bg_events
