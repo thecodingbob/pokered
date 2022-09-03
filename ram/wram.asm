@@ -2097,7 +2097,8 @@ wWhichDungeonWarp:: db
 
 wUnusedD71F:: db
 
-	ds 8
+wOakFightRoomCurScript:: db
+	ds 7
 
 ; bit 0: using Strength outside of battle
 ; bit 1: set by IsSurfingAllowed when surfing's allowed, but the caller resets it after checking the result

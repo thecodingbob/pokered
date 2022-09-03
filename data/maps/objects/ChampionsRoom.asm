@@ -4,8 +4,8 @@ ChampionsRoom_Object:
 	def_warp_events
 	warp_event  3,  7, LANCES_ROOM, 2
 	warp_event  4,  7, LANCES_ROOM, 3
-	warp_event  3,  0, HALL_OF_FAME, 1
-	warp_event  4,  0, HALL_OF_FAME, 1
+	warp_event  3,  0, CELADON_CHIEF_HOUSE, 1
+	warp_event  4,  0, CELADON_CHIEF_HOUSE, 2
 
 	def_bg_events
 

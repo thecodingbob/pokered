@@ -1,20 +1,38 @@
 CeladonChiefHouse_Script:
-	call EnableAutoTextBoxDrawing
-	ret
+   call EnableAutoTextBoxDrawing
+   ld hl, OakFightRoomTrainerHeader0
+   ld de, OakFightRoom_ScriptPointers
+   ld a, [wOakFightRoomCurScript]
+   call ExecuteCurMapScriptInTable
+   ld [wOakFightRoomCurScript], a
+   ret
 
 CeladonChiefHouse_TextPointers:
-	dw CeladonHouseText1
-	dw CeladonHouseText2
-	dw CeladonHouseText3
+	dw OakFightRoomText1
 
-CeladonHouseText1:
-	text_far _CeladonHouseText1
+OakFightRoom_ScriptPointers:
+	dw CheckFightingMapTrainers
+	dw DisplayEnemyTrainerTextAndStartBattle
+	dw EndTrainerBattle
+
+OakFightRoomTrainerHeader0:
+	trainer EVENT_BEAT_OAK, 0, OakBattleText, OakEndBattleText, OakAfterBattleText
+	db -1 ; end
+
+OakFightRoomText1:
+	text_asm
+	ld hl, OakFightRoomTrainerHeader0
+	call TalkToTrainer
+	jp TextScriptEnd
+
+OakBattleText:
+	text_far _OakBattleText
 	text_end
 
-CeladonHouseText2:
-	text_far _CeladonHouseText2
+OakEndBattleText:
+	text_far _OakEndBattleText
 	text_end
 
-CeladonHouseText3:
-	text_far _CeladonHouseText3
+OakAfterBattleText:
+	text_far _OakAfterBattleText
 	text_end

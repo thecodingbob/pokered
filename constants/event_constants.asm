@@ -770,6 +770,11 @@
 	const_skip 8
 	const EVENT_BEAT_ARTICUNO
 
+; Oak Fight room events
+	const_next $9E1
+	const EVENT_BEAT_OAK
+	const_skip 
+
 ; End of events
 	const_next $A00
 DEF NUM_EVENTS EQU const_value
