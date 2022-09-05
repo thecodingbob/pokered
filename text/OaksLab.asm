@@ -14,9 +14,11 @@ _OaksLabText40::
 	done
 
 _OaksLabText41::
-	text "<RIVAL>: My"
-	line "#MON looks a"
-	cont "lot stronger."
+	text "<RIVAL>: Walk"
+	line "down there so"
+	cont "we can start"
+	cont "the first rival"
+	cont "fight."
 	done
 
 _OaksLabText39::
@@ -52,8 +54,9 @@ _OaksLabReceivedMonText::
 	text_end
 
 _OaksLabLastMonText::
-	text "That's PROF.OAK's"
-	line "last #MON!"
+	text "You already"
+	line "know you can't"
+	cont "take that."
 	done
 
 _OaksLabText_1d2f0::
@@ -105,7 +108,7 @@ _OaksLabDeliverParcelText2::
 	done
 
 _OaksLabAroundWorldText::
-	text "Brock is already"
+	text "BROCK is already"
 	line "waiting for"
 	cont "you, <PLAYER>!"
 	done
@@ -221,33 +224,22 @@ _OaksLabRivalReceivedMonText::
 _OaksLabRivalChallengeText::
 	text "<RIVAL>: Wait"
 	line "<PLAYER>!"
-	cont "Let's check out"
-	cont "our #MON!"
-
-	para "Come on, I'll take"
-	line "you on!"
+	cont "I'm the first boss!"
 	done
 
 _OaksLabText_1d3be::
-	text "WHAT?"
-	line "Unbelievable!"
-	cont "I picked the"
-	cont "wrong #MON!"
+	text "I picked the"
+	line "wrong #MON!"
 	prompt
 
 _OaksLabText_1d3c3::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: Yeah!"
 	prompt
 
 _OaksLabRivalToughenUpText::
 	text "<RIVAL>: Okay!"
-	line "I'll make my"
-	cont "#MON fight to"
-	cont "toughen it up!"
-
-	para "<PLAYER>! Gramps!"
-	line "Smell you later!"
+	line "See you in"
+	cont "ROUTE 22!"
 	done
 
 _OaksLabText21::
@@ -330,6 +322,10 @@ _OaksLabText27::
 	done
 
 _OaksLabText_1d405::
-	text "I study #MON as"
-	line "PROF.OAK's AIDE."
+	text "The stairs over"
+	line "here will"
+	cont "teleport you to"
+	cont "VIRIDIAN CITY."
+	para "How? With the"
+	line "power of science!"
 	done

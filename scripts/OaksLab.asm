@@ -915,7 +915,7 @@ OaksLabMonChoiceMenu:
 	call PrintText
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
-	ld a, 5
+	ld a, 10 ; starter level
 	ld [wCurEnemyLVL], a
 	ld a, [wcf91]
 	ld [wd11e], a

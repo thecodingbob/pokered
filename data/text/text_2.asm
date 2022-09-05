@@ -874,8 +874,7 @@ _UseNextMonText::
 	done
 
 _Rival1WinText::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: Yeah!"
 	prompt
 
 _PlayerBlackedOutText2::
@@ -1702,9 +1701,8 @@ _OakSpeechText3::
 	done
 
 _DoYouWantToNicknameText::
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text "Give a nickname"
+	line "to @"
 	text_ram wcd6d
 	text "?"
 	done
