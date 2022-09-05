@@ -157,13 +157,9 @@ _HMCantDeleteText::
 	prompt
 
 _PokemonCenterWelcomeText::
-	text "Welcome to our"
-	line "#MON CENTER!"
-
-	para "We heal your"
-	line "#MON back to"
-	cont "perfect health!"
-	prompt
+	text "Give me the"
+	line "#MON, quick!"
+	done
 
 _ShallWeHealYourPokemonText::
 	text "Shall we heal your"
@@ -176,11 +172,10 @@ _NeedYourPokemonText::
 	done
 
 _PokemonFightingFitText::
-	text "Thank you!"
-	line "Your #MON are"
-	cont "fighting fit!"
-	prompt
-
+	text "Done. Go go go"
+	line "go go go!"
+	done
+	
 _PokemonCenterFarewellText::
 	text "We hope to see"
 	line "you again!"

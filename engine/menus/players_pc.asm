@@ -13,8 +13,6 @@ PlayerPC::
 ; accessing it directly
 	ld a, SFX_TURN_ON_PC
 	call PlaySound
-	ld hl, TurnedOnPC2Text
-	call PrintText
 
 PlayerPCMenu:
 	ld a, [wParentMenuItem]

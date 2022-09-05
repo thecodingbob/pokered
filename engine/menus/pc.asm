@@ -2,9 +2,6 @@ ActivatePC::
 	call SaveScreenTilesToBuffer2
 	ld a, SFX_TURN_ON_PC
 	call PlaySound
-	ld hl, TurnedOnPC1Text
-	call PrintText
-	call WaitForSoundToFinish
 	ld hl, wFlags_0xcd60
 	set 3, [hl]
 	call LoadScreenTilesFromBuffer2
@@ -53,9 +50,6 @@ PCMainMenu:
 	set 3, [hl]
 	ld a, SFX_ENTER_PC
 	call PlaySound
-	call WaitForSoundToFinish
-	ld hl, AccessedMyPCText
-	call PrintText
 	farcall PlayerPC
 	jr ReloadMainMenu
 OaksPC:
@@ -73,15 +67,6 @@ PKMNLeague:
 BillsPC:
 	ld a, SFX_ENTER_PC
 	call PlaySound
-	call WaitForSoundToFinish
-	CheckEvent EVENT_MET_BILL
-	jr nz, .billsPC ;if you've met bill, use that bill's instead of someone's
-	ld hl, AccessedSomeonesPCText
-	jr .printText
-.billsPC
-	ld hl, AccessedBillsPCText
-.printText
-	call PrintText
 	farcall BillsPC_
 ReloadMainMenu:
 	xor a

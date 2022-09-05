@@ -156,10 +156,12 @@ _GymStatueText2::
 	done
 
 _ViridianCityPokecenterGuyText::
-	text "#MON CENTERs"
-	line "heal your tired,"
-	cont "hurt or fainted"
-	cont "#MON!"
+	text "BOB wanted to"
+	line "make this room"
+	cont "smaller, but he"
+	cont "didn't figure"
+	cont "out how to move"
+	cont "the PC code yet."
 	done
 
 _PewterCityPokecenterGuyText::
