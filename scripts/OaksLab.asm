@@ -138,21 +138,10 @@ OaksLabScript4:
 OaksLabScript5:
 	ld a, $fc
 	ld [wJoyIgnore], a
-	ld a, $11
-	ldh [hSpriteIndexOrTextID], a
-	call DisplayTextID
-	call Delay3
 	ld a, $12
 	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	call Delay3
-	ld a, $13
-	ldh [hSpriteIndexOrTextID], a
-	call DisplayTextID
-	call Delay3
-	ld a, $14
-	ldh [hSpriteIndexOrTextID], a
-	call DisplayTextID
 	SetEvent EVENT_OAK_ASKED_TO_CHOOSE_MON
 	xor a
 	ld [wJoyIgnore], a
@@ -776,7 +765,6 @@ OaksLabText1:
 	text_asm
 	CheckEvent EVENT_FOLLOWED_OAK_INTO_LAB_2
 	jr nz, .beforeChooseMon
-	ld hl, OaksLabGaryText1
 	call PrintText
 	jr .done
 .beforeChooseMon
