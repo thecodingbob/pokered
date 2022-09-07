@@ -75,8 +75,10 @@ Route22Script0:
 	ret
 
 .Route22RivalBattleCoords
-	dbmapcoord 29,  4
-	dbmapcoord 29,  5
+	dbmapcoord 39,  6
+	dbmapcoord 39,  7
+	dbmapcoord 39,  8
+	dbmapcoord 39,  9
 	dbmapcoord 8,  12
 	dbmapcoord 8,  13
 	db -1 ; end
@@ -207,16 +209,9 @@ Route22RivalExitMovementData1:
 	db -1 ; end
 
 Route22RivalExitMovementData2:
-	db NPC_MOVEMENT_UP
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
 	db -1 ; end
 
 Route22Script3:
