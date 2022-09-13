@@ -17,60 +17,67 @@ PewterPokecenterText2:
 
 PewterJigglypuffText:
 	text_asm
-	ld a, TRUE
-	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	ld hl, .JigglypuffText
+	CheckEvent EVENT_BOUGHT_MAGIKARP, 1
+	jp c, .alreadyBoughtMagikarp
+	ld hl, .Text1
 	call PrintText
-
-	ld a, SFX_STOP_ALL_MUSIC
-	call PlaySound
-	ld c, 32
-	call DelayFrames
-
-	ld hl, JigglypuffFacingDirections
-	ld de, wJigglypuffFacingDirections
-	ld bc, JigglypuffFacingDirectionsEnd - JigglypuffFacingDirections
-	call CopyData
-
-	ld a, [wSprite03StateData1ImageIndex]
-	ld hl, wJigglypuffFacingDirections
-.findMatchingFacingDirectionLoop
-	cp [hl]
-	inc hl
-	jr nz, .findMatchingFacingDirectionLoop
-	dec hl
-
-	push hl
-	ld c, BANK(Music_JigglypuffSong)
-	ld a, MUSIC_JIGGLYPUFF_SONG
-	call PlayMusic
-	pop hl
-
-.spinMovementLoop
-	ld a, [hl]
-	ld [wSprite03StateData1ImageIndex], a
-; rotate the array
-	push hl
-	ld hl, wJigglypuffFacingDirections
-	ld de, wJigglypuffFacingDirections - 1
-	ld bc, JigglypuffFacingDirectionsEnd - JigglypuffFacingDirections
-	call CopyData
-	ld a, [wJigglypuffFacingDirections - 1]
-	ld [wJigglypuffFacingDirections + 3], a
-	pop hl
-	ld c, 24
-	call DelayFrames
-	ld a, [wChannelSoundIDs]
-	ld b, a
-	ld a, [wChannelSoundIDs + CHAN2]
-	or b
-	jr nz, .spinMovementLoop
-
-	ld c, 48
-	call DelayFrames
-	call PlayDefaultMusic
+	ld a, MONEY_BOX
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jp nz, .choseNo
+	ldh [hMoney], a
+	ldh [hMoney + 2], a
+	ld a, $5
+	ldh [hMoney + 1], a
+	call HasEnoughMoney
+	jr nc, .enoughMoney
+	ld hl, .NoMoneyText
+	jr .printText
+.enoughMoney
+	lb bc, MAGIKARP, 16
+	call GivePokemon
+	jr nc, .done
+	xor a
+	ld [wPriceTemp], a
+	ld [wPriceTemp + 2], a
+	ld a, $5
+	ld [wPriceTemp + 1], a
+	ld hl, wPriceTemp + 2
+	ld de, wPlayerMoney + 2
+	ld c, $3
+	predef SubBCDPredef
+	ld a, MONEY_BOX
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
+	SetEvent EVENT_BOUGHT_MAGIKARP
+	jr .done
+.choseNo
+	ld hl, .RefuseText
+	jr .printText
+.alreadyBoughtMagikarp
+	ld hl, .Text2
+.printText
+	call PrintText
+.done
 	jp TextScriptEnd
+.Text1
+	text_far _MagikarpSalesmanText1
+	text_end
 
+.RefuseText
+	text_far _MagikarpSalesmanNoText
+	text_end
+
+.NoMoneyText
+	text_far _MagikarpSalesmanNoMoneyText
+	text_end
+
+.Text2
+	text_far _MagikarpSalesmanText2
+	text_end
 .JigglypuffText:
 	text_far _PewterJigglypuffText
 	text_end

@@ -17,20 +17,18 @@ _MtMoonPokecenterText3::
 	done
 
 _MagikarpSalesmanText1::
-	text "MAN: Hello, there!"
-	line "Have I got a deal"
-	cont "just for you!"
+	text "JIGGLYPUFF: Hello"
+	line "there!"
 
 	para "I'll let you have"
 	line "a swell MAGIKARP"
 	cont "for just ¥500!"
-	cont "What do you say?"
 	done
 
 _MagikarpSalesmanNoText::
-	text "No? I'm only"
-	line "doing this as a"
-	cont "favor to you!"
+	text "No? Is that"
+	line "because I'm a"
+	cont "#MON?"
 	done
 
 _MagikarpSalesmanNoMoneyText::
@@ -39,8 +37,8 @@ _MagikarpSalesmanNoMoneyText::
 	done
 
 _MagikarpSalesmanText2::
-	text "MAN: Well, I don't"
-	line "give refunds!"
+	text "JIGGLYPUFF: Jiggly"
+	line "jiggly, puff!"
 	done
 
 _MtMoonPokecenterText5::
