@@ -1,9 +1,10 @@
 _ViridianForestText1::
-	text "I came here with"
-	line "some friends!"
+	text "The forest is"
+	line "now populated by"
+	cont "stronger #MON."
 
-	para "They're out for"
-	line "#MON fights!"
+	para "I want CATERPIE"
+	line "back!"
 	done
 
 _ViridianForestBattleText1::
@@ -106,14 +107,13 @@ _ViridianForestText12::
 	done
 
 _ViridianForestText13::
-	text "TRAINER TIPS"
+	text "You will find"
+	line "some RARE CANDIES"
+	cont "on your way."
 
-	para "Weaken #MON"
-	line "before attempting"
-	cont "capture!"
+	para "Use them"
+	line "wisely."
 
-	para "When healthy,"
-	line "they may escape!"
 	done
 
 _ViridianForestText14::
