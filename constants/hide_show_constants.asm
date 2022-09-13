@@ -10,7 +10,7 @@ DEF SHOW EQU $15
 
 	const_def
 	const HS_PALLET_TOWN_OAK               ; 00
-	const HS_LYING_OLD_MAN                 ; 01
+	const HS_VIRIDIAN_CITY_BLOCKER         ; 01
 	const HS_OLD_MAN                       ; 02
 	const HS_MUSEUM_GUY                    ; 03
 	const HS_GYM_GUY                       ; 04

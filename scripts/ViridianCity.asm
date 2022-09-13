@@ -5,10 +5,19 @@ ViridianCity_Script:
 	jp CallFunctionInTable
 
 ViridianCity_ScriptPointers:
+	dw ViridianBlockerGuyScript
 	dw ViridianCityScript0
 	dw ViridianCityScript1
 	dw ViridianCityScript2
 	dw ViridianCityScript3
+
+ViridianBlockerGuyScript:
+	CheckEvent EVENT_BEAT_ROUTE22_RIVAL_1ST_BATTLE
+	ret z
+	ld a, HS_VIRIDIAN_CITY_BLOCKER
+	ld [wMissableObjectIndex], a
+	predef HideObject
+	ret
 
 ViridianCityScript0:
 	call ViridianCityScript_1900b

@@ -50,11 +50,11 @@ _ViridianCityText_19175::
 	done
 
 _ViridianCityText_1917a::
-	text "When I go shop in"
-	line "PEWTER CITY, I"
-	cont "have to take the"
-	cont "winding trail in"
-	cont "VIRIDIAN FOREST."
+	text "You have to beat"
+	line "the boss of this"
+	cont "area before"
+	cont "continuing to"
+	cont "PEWTER CITY."
 	done
 
 _ViridianCityText_19191::
@@ -139,9 +139,9 @@ _ViridianCityText_19219::
 	done
 
 _ViridianCityText8::
-	text "VIRIDIAN CITY "
-	line "The Eternally"
-	cont "Green Paradise"
+	text "Warp to VIRIDIAN"
+	line "FOREST, then"
+	cont "PEWTER CITY."
 	done
 
 _ViridianCityText9::

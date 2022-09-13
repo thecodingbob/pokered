@@ -157,7 +157,7 @@ _HMCantDeleteText::
 	prompt
 
 _PokemonCenterWelcomeText::
-	text "Give me the"
+	text "Give me your"
 	line "#MON, quick!"
 	done
 
