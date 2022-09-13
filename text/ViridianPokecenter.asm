@@ -1,9 +1,12 @@
 _ViridianPokeCenterText2::
-	text "You can use that"
-	line "PC in the corner."
+	text "#MON CENTERS"
+	line "have been shrunk"
+	cont "to avoid"
+	cont "distractions." 
 
-	para "The receptionist"
-	line "told me. So kind!"
+	para "Me? How dare you"
+	line "call me a"
+	cont "distraction!"
 	done
 
 _ViridianPokeCenterText3::

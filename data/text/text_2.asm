@@ -804,8 +804,12 @@ _TownMapText::
 	text_end
 
 _PokemonStuffText::
-	text "Wow! Tons of"
-	line "#MON stuff!"
+	text "Two words come"
+	line "into your mind"
+	cont "while you are"
+	cont "looking at"
+	cont "random stuff..."
+	para "BOSS. RUSH."
 	done
 
 _OutOfSafariBallsText::
