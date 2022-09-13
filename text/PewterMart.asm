@@ -1,5 +1,5 @@
 _PewterMartText2::
-	text "A shady, old man"
+	text "A shady JIGGLYPUFF"
 	line "got me to buy"
 	cont "this really weird"
 	cont "fish #MON!"
@@ -14,4 +14,9 @@ _PewterMartText3::
 	cont "raise #MON"
 	cont "diligently, even"
 	cont "the weak ones!"
+
+	para "But then again,"
+	line "some #MON have"
+	cont "really terrible"
+	cont "base stats!"
 	done
