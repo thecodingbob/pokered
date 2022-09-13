@@ -91,8 +91,7 @@ _PewterCityText6::
 	done
 
 _PewterCityText7::
-	text "Warp to MT."
-	line "MOON."
+	text "Warp to MT.MOON"
 	done
 
 _PewterCityText10::
