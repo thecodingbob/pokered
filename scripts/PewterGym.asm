@@ -90,7 +90,7 @@ PewterGym_TextPointers:
 PewterGymTrainerHeaders:
 	def_trainers 2
 PewterGymTrainerHeader0:
-	trainer EVENT_BEAT_PEWTER_GYM_TRAINER_0, 5, PewterGymBattleText1, PewterGymEndBattleText1, PewterGymAfterBattleText1
+	trainer EVENT_BEAT_PEWTER_GYM_TRAINER_0, 1, PewterGymBattleText1, PewterGymEndBattleText1, PewterGymAfterBattleText1
 	db -1 ; end
 
 BrockText:
@@ -153,8 +153,6 @@ TM34NoRoomText:
 
 ReceivedBoulderBadgeText:
 	text_far _ReceivedBoulderBadgeText
-	sound_level_up ; probably supposed to play SFX_GET_ITEM_1 but the wrong music bank is loaded
-	text_far _BrockBoulerBadgeInfoText ; Text to tell that the flash technique can be used
 	text_end
 
 PewterGymTrainerText1:
@@ -181,19 +179,6 @@ PewterGymGuideText:
 	bit BIT_BOULDERBADGE, a
 	jr nz, .afterBeat
 	ld hl, PewterGymGuidePreAdviceText
-	call PrintText
-	call YesNoChoice
-	ld a, [wCurrentMenuItem]
-	and a
-	jr nz, .PewterGymGuideBeginAdviceText
-	ld hl, PewterGymGuideBeginAdviceText
-	call PrintText
-	jr .PewterGymGuideAdviceText
-.PewterGymGuideBeginAdviceText
-	ld hl, PewterGymText_5c524
-	call PrintText
-.PewterGymGuideAdviceText
-	ld hl, PewterGymGuideAdviceText
 	call PrintText
 	jr .done
 .afterBeat

@@ -1,13 +1,5 @@
 _BrockPostBattleAdviceText::
-	text "There are all"
-	line "kinds of trainers"
-	cont "in the world!"
-
-	para "You appear to be"
-	line "very gifted as a"
-	cont "#MON trainer!"
-
-	para "Go to the GYM in"
+	text "Go to the GYM in"
 	line "CERULEAN and test"
 	cont "your abilities!"
 	done
@@ -25,25 +17,12 @@ _ReceivedTM34Text::
 _TM34ExplanationText::
 	text_start
 
-	para "A TM contains a"
-	line "technique that"
-	cont "can be taught to"
-	cont "#MON!"
-
-	para "A TM is good only"
-	line "once! So when you"
-	cont "use one to teach"
-	cont "a new technique,"
-	cont "pick the #MON"
-	cont "carefully!"
-
 	para "TM34 contains"
 	line "BIDE!"
 
-	para "Your #MON will"
-	line "absorb damage in"
-	cont "battle then pay"
-	cont "it back double!"
+	para "Your will"
+	line "probably never"
+	cont "use it."
 	done
 
 _TM34NoRoomText::
@@ -55,13 +34,7 @@ _ReceivedBoulderBadgeText::
 	text "I took"
 	line "you for granted."
 
-	para "As proof of your"
-	line "victory, here's"
-	cont "the BOULDERBADGE!"
-
-	para "<PLAYER> received"
-	line "the BOULDERBADGE!@"
-	text_end
+	prompt
 
 _BrockBoulerBadgeInfoText::
 	text_start
@@ -81,19 +54,13 @@ _BrockBoulerBadgeInfoText::
 
 _PewterGymBattleText1::
 	text "Stop right there,"
-	line "kid!"
+	line "criminal scum!"
 
-	para "You're still light"
-	line "years from facing"
-	cont "BROCK!"
 	done
 
 _PewterGymEndBattleText1::
 	text "Darn!"
 
-	para "Light years isn't"
-	line "time! It measures"
-	cont "distance!"
 	prompt
 
 _PewterGymAfterBattleText1::
@@ -103,17 +70,16 @@ _PewterGymAfterBattleText1::
 	done
 
 _PewterGymGuidePreAdviceText::
-	text "Hiya! I can tell"
-	line "you have what it"
-	cont "takes to become a"
-	cont "#MON champ!"
+	text "BROCK uses ROCK"
+	line "types, as usual."
 
-	para "I'm no trainer,"
-	line "but I can tell"
-	cont "you how to win!"
+	para "If you have"
+	line "trouble facing"
+	cont "him, try"
+	cont "exploring the"
+	cont "tall grass in" 
+	cont "VIRIDIAN FOREST."
 
-	para "Let me take you"
-	line "to the top!"
 	done
 
 _PewterGymGuideBeginAdviceText::
