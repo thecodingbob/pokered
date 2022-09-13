@@ -13,7 +13,7 @@ DEF SHOW EQU $15
 	const HS_VIRIDIAN_CITY_BLOCKER         ; 01
 	const HS_OLD_MAN                       ; 02
 	const HS_MUSEUM_GUY                    ; 03
-	const HS_GYM_GUY                       ; 04
+	const HS_PEWTER_CITY_BLOCKER           ; 04
 	const HS_CERULEAN_RIVAL                ; 05
 	const HS_CERULEAN_ROCKET               ; 06
 	const HS_CERULEAN_GUARD_1              ; 07

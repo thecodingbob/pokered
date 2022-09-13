@@ -160,7 +160,7 @@ PewterCityScript5:
 	ld a, [wd730]
 	bit 0, a
 	ret nz
-	ld a, HS_GYM_GUY
+	ld a, HS_PEWTER_CITY_BLOCKER
 	ld [wMissableObjectIndex], a
 	predef HideObject
 	ld a, $6
@@ -171,7 +171,7 @@ PewterCityScript6:
 	ld a, $5
 	ld [wSpriteIndex], a
 	call SetSpritePosition2
-	ld a, HS_GYM_GUY
+	ld a, HS_PEWTER_CITY_BLOCKER
 	ld [wMissableObjectIndex], a
 	predef ShowObject
 	xor a
@@ -283,18 +283,6 @@ PewterCityText5:
 	text_asm
 	ld hl, PewterCityText_1945d
 	call PrintText
-	xor a
-	ldh [hJoyHeld], a
-	ld [wNPCMovementScriptFunctionNum], a
-	ld a, $3
-	ld [wNPCMovementScriptPointerTableNum], a
-	ldh a, [hLoadedROMBank]
-	ld [wNPCMovementScriptBank], a
-	ld a, $5
-	ld [wSpriteIndex], a
-	call GetSpritePosition2
-	ld a, $4
-	ld [wPewterCityCurScript], a
 	jp TextScriptEnd
 
 PewterCityText_1945d:

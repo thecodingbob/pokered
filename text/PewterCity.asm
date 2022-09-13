@@ -9,15 +9,15 @@ _PewterCityText1::
 	done
 
 _PewterCityText2::
-	text "There aren't many"
-	line "serious #MON"
-	cont "trainers here!"
+	text "Keep in mind that"
+	line "trainers inside"
+	cont "gyms are your"
+	cont "only source of"
+	cont "training."
 
-	para "They're all like"
-	line "BUG CATCHERs,"
-	cont "but PEWTER GYM's"
-	cont "BROCK is totally"
-	cont "into it!"
+	para "Think twice before"
+	line "skipping them."
+
 	done
 
 _PewterCityText_193f1::
@@ -63,11 +63,16 @@ _PewterCityText_19431::
 	done
 
 _PewterCityText_1945d::
-	text "You're a trainer"
-	line "right? BROCK's"
-	cont "looking for new"
-	cont "challengers!"
-	cont "Follow me!"
+	text "You must beat"
+	line "BROCK before"
+	cont "venturing forth."
+	
+	para "..."
+
+	para "What? No, I"
+	line "won't force you"
+	cont "to follow me."
+	cont "You know the way."
 	done
 
 _PewterCityText14::
@@ -86,14 +91,8 @@ _PewterCityText6::
 	done
 
 _PewterCityText7::
-	text "NOTICE!"
-
-	para "Thieves have been"
-	line "stealing #MON"
-	cont "fossils at MT."
-	cont "MOON! Please call"
-	cont "PEWTER POLICE"
-	cont "with any info!"
+	text "Warp to MT."
+	line "MOON."
 	done
 
 _PewterCityText10::
