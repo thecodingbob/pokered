@@ -169,12 +169,6 @@ BillsHouseText2:
 	ld hl, SSTicketReceivedText
 	call PrintText
 	SetEvent EVENT_GOT_SS_TICKET
-	ld a, HS_CERULEAN_GUARD_1
-	ld [wMissableObjectIndex], a
-	predef ShowObject
-	ld a, HS_CERULEAN_GUARD_2
-	ld [wMissableObjectIndex], a
-	predef HideObject
 .asm_1e8a9
 	ld hl, BillsHouseText_1e8cb
 	call PrintText

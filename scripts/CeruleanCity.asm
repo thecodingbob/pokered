@@ -4,6 +4,16 @@ CeruleanCity_Script:
 	ld a, [wCeruleanCityCurScript]
 	jp CallFunctionInTable
 
+CeruleanCityBlockerScript:
+	CheckEvent EVENT_BEAT_MISTY
+	ret z
+	CheckEvent EVENT_BEAT_CERULEAN_RIVAL
+	ret z
+	ld a, HS_CERULEAN_CITY_BLOCKER
+	ld [wMissableObjectIndex], a
+	predef HideObject
+	ret
+
 CeruleanCityScript_1948c:
 	xor a
 	ld [wJoyIgnore], a
@@ -39,6 +49,7 @@ IF DEF(_DEBUG)
 	call DebugPressedOrHeldB
 	ret nz
 ENDC
+	call CeruleanCityBlockerScript
 	CheckEvent EVENT_BEAT_CERULEAN_ROCKET_THIEF
 	jr nz, .skipRocketThiefEncounter
 	ld hl, CeruleanCityCoords1
