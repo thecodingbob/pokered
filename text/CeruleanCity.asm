@@ -1,31 +1,14 @@
 _CeruleanCityText_19668::
 	text "<RIVAL>: Yo!"
 	line "<PLAYER>!"
-
-	para "You're still"
-	line "struggling along"
-	cont "back here?"
-
-	para "I'm doing great!"
-	line "I caught a bunch"
-	cont "of strong and"
-	cont "smart #MON!"
-
-	para "Here, let me see"
-	line "what you caught,"
-	cont "<PLAYER>!"
 	done
 
 _CeruleanCityText_1966d::
 	text "Hey!"
-	line "Take it easy!"
-	cont "You won already!"
 	prompt
 
 _CeruleanCityText_19672::
 	text "Heh!"
-	line "You're no match"
-	cont "for my genius!"
 	prompt
 
 _CeruleanCityText_19677::
@@ -123,17 +106,11 @@ _CeruleanCityText5::
 	done
 
 _CeruleanCityText6::
-	text "The people here"
-	line "were robbed."
-
-	para "It's obvious that"
-	line "TEAM ROCKET is"
-	cont "behind this most"
-	cont "heinous crime!"
-
-	para "Even our POLICE"
-	line "force has trouble"
-	cont "with the ROCKETs!"
+	text "You need to beat"
+	line "<RIVAL> and"
+	cont "MISTY before"
+	cont "proceeding to"
+	cont "VERMILLION CITY."
 	done
 
 _CeruleanCityText_19730::
