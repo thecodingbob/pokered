@@ -15,30 +15,7 @@ _CeruleanCityText_19677::
 	text "<RIVAL>: Hey,"
 	line "guess what?"
 
-	para "I went to BILL's"
-	line "and got him to"
-	cont "show me his rare"
-	cont "#MON!"
-
-	para "That added a lot"
-	line "of pages to my"
-	cont "#DEX!"
-
-	para "After all, BILL's"
-	line "world famous as a"
-	cont "#MANIAC!"
-
-	para "He invented the"
-	line "#MON Storage"
-	cont "System on PC!"
-
-	para "Since you're using"
-	line "his system, go"
-	cont "thank him!"
-
-	para "Well, I better"
-	line "get rolling!"
-	cont "Smell ya later!"
+	para "Nothing. Bye."
 	done
 
 _CeruleanCityText_196d9::

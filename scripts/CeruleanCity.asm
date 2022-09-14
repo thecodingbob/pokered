@@ -266,6 +266,9 @@ CeruleanCityText1:
 	CheckEvent EVENT_BEAT_CERULEAN_RIVAL
 	; do pre-battle text
 	jr z, .PreBattleText
+	; or talk about bill
+	ld hl, CeruleanCityText_19677
+	call PrintText
 	jr .end
 .PreBattleText
 	ld hl, CeruleanCityText_19668
