@@ -4,8 +4,8 @@ MtMoonB2F_Object:
 	def_warp_events
 	warp_event 25,  9, MT_MOON_B1F, 2
 	warp_event 21, 17, MT_MOON_B1F, 5
-	warp_event 11, 17, PEWTER_CITY, 1
-	warp_event  5,  7, ROUTE_4, 3
+	warp_event 11, 11, PEWTER_CITY, 1
+	warp_event 11,  3, ROUTE_4, 3
 
 	def_bg_events
 

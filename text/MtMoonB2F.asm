@@ -23,31 +23,26 @@ _MtMoon3Text_49f7f::
 _MtMoon3Text_49f85::
 	text "Hey, stop!"
 
-	para "I found these"
-	line "fossils! They're"
-	cont "both mine!"
+	para "What did you say?"
+	line "I'm not strong"
+	cont "enough to be"
+	cont "considered a"
+	cont "boss?"
 	done
 
 _MtMoon3Text_49f8a::
 	text "OK!"
-	line "I'll share!"
 	prompt
 
 _MtMoon3Text_49f8f::
-	text "We'll each take"
-	line "one!"
-	cont "No being greedy!"
+	text "Take your"
+	line "fossil and"
+	cont "get moving!"
 	done
 
 _MtMoon3Text_49f94::
-	text "Far away, on"
-	line "CINNABAR ISLAND,"
-	cont "there's a #MON"
-	cont "LAB."
-
-	para "They do research"
-	line "on regenerating"
-	cont "fossils."
+	text "Why are you"
+	line "still here?"
 	done
 
 _MtMoon3Text_49f99::
