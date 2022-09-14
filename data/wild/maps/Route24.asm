@@ -1,26 +1,15 @@
 Route24WildMons:
-	def_grass_wildmons 25 ; encounter rate
-IF DEF(_RED)
-	db  7, WEEDLE
-	db  8, KAKUNA
-	db 12, PIDGEY
-	db 12, ODDISH
-	db 13, ODDISH
-	db 10, ABRA
-	db 14, ODDISH
-ENDC
-IF DEF(_BLUE)
-	db  7, CATERPIE
-	db  8, METAPOD
-	db 12, PIDGEY
-	db 12, BELLSPROUT
-	db 13, BELLSPROUT
-	db 10, ABRA
-	db 14, BELLSPROUT
-ENDC
-	db 13, PIDGEY
-	db  8, ABRA
-	db 12, ABRA
+	def_grass_wildmons 50 ; encounter rate
+	db 18, BEEDRILL
+	db 18, BUTTERFREE
+	db 18, PIDGEOTTO
+	db 18, ODDISH
+	db 18, BELLSPROUT
+	db 18, KADABRA
+	db 19, BEEDRILL
+	db 19, BUTTERFREE
+	db 19, PIDGEOTTO
+	db 19, ODDISH
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
