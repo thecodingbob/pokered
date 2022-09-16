@@ -1,19 +1,23 @@
-_VermilionPokecenterText2::
-	text "Even if they are"
-	line "the same level,"
-	cont "#MON can have"
-	cont "very different"
-	cont "abilities."
+_VermilionPokecenterText1::
+	text "Here is my OLD"
+	line "ROD. Take it."
+	prompt
 
-	para "A #MON raised"
-	line "by a trainer is"
-	cont "stronger than one"
-	cont "in the wild."
-	done
+_VermilionPokecenterText2::
+	text "<PLAYER> received"
+	line "an @"
+	text_ram wStringBuffer
+	text "!@"
+	text_end
 
 _VermilionPokecenterText3::
-	text "My #MON was"
-	line "poisoned! It"
-	cont "fainted while we"
-	cont "were walking!"
+	text "What? Your bag"
+	line "is full! Go make"
+	cont "some space."
+	done
+
+_VermilionPokecenterText4::
+	text "You have my OLD"
+	line "ROD. Go fish some"
+	cont "MAGIKARP."
 	done
