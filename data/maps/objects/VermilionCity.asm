@@ -3,30 +3,24 @@ VermilionCity_Object:
 
 	def_warp_events
 	warp_event 11,  3, VERMILION_POKECENTER, 1
-	warp_event  9, 13, POKEMON_FAN_CLUB, 1
-	warp_event 23, 13, VERMILION_MART, 1
-	warp_event 12, 19, VERMILION_GYM, 1
-	warp_event 23, 19, VERMILION_PIDGEY_HOUSE, 1
-	warp_event 18, 31, VERMILION_DOCK, 1
-	warp_event 19, 31, VERMILION_DOCK, 1
-	warp_event 15, 13, ROCK_TUNNEL_1F, 5
+	warp_event 15,  3, VERMILION_MART, 1
+	warp_event 26,  3, VERMILION_GYM, 1
+	warp_event 31,  3, ROCK_TUNNEL_1F, 5
 	warp_event  7,  3, SS_ANNE_2F, 7
 
 	def_bg_events
-	bg_event 27,  3,  7 ; VermilionCityText7
-	bg_event 37, 13,  8 ; VermilionCityText8
-	bg_event 24, 13,  9 ; MartSignText
+	bg_event 29,  3,  7 ; VermilionCityText7
+	bg_event 16,  3,  9 ; MartSignText
 	bg_event 12,  3, 10 ; PokeCenterSignText
-	bg_event  7, 13, 11 ; VermilionCityText11
-	bg_event  7, 19, 12 ; VermilionCityText12
-	bg_event 29, 15, 13 ; VermilionCityText13
+	bg_event  5,  3, 11 ; VermilionCityText11
+	bg_event 21,  3, 12 ; VermilionCityText12
 
 	def_object_events
-	object_event 19,  7, SPRITE_BEAUTY, WALK, LEFT_RIGHT, 1 ; person
-	object_event  9, 14, SPRITE_GAMBLER, STAY, NONE, 2 ; person
+	object_event 35,  7, SPRITE_BEAUTY, STAY, LEFT, 1 ; person
+	object_event 35, 10, SPRITE_GAMBLER, STAY, LEFT, 2 ; person
 	object_event 39, 35, SPRITE_SAILOR, STAY, UP, 3 ; person
-	object_event 30,  7, SPRITE_GAMBLER, STAY, NONE, 4 ; person
-	object_event 29,  9, SPRITE_MONSTER, WALK, UP_DOWN, 5 ; person
-	object_event 25, 27, SPRITE_SAILOR, WALK, LEFT_RIGHT, 6 ; person
+	object_event 21, 10, SPRITE_GAMBLER, STAY, UP, 4 ; person
+	object_event 19, 10, SPRITE_MONSTER, STAY, UP, 5 ; person
+	object_event 35,  4, SPRITE_SAILOR, STAY, LEFT, 6 ; person
 
 	def_warps_to VERMILION_CITY
