@@ -1,5 +1,6 @@
 _UndergrdTunnelEntRoute6Text1::
-	text "People often lose"
-	line "things in that"
-	cont "UNDERGROUND PATH."
+	text "You will arrive"
+	line "right before"
+	cont "VERMILLION CITY"
+	cont "from here."
 	done
