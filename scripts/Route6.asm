@@ -28,13 +28,13 @@ Route6TrainerHeader0:
 Route6TrainerHeader1:
 	trainer EVENT_BEAT_ROUTE_6_TRAINER_1, 0, Route6BattleText2, Route6EndBattleText2, Route6AfterBattleText1
 Route6TrainerHeader2:
-	trainer EVENT_BEAT_ROUTE_6_TRAINER_2, 4, Route6BattleText3, Route6EndBattleText3, Route6AfterBattleText3
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_2, 0, Route6BattleText3, Route6EndBattleText3, Route6AfterBattleText3
 Route6TrainerHeader3:
-	trainer EVENT_BEAT_ROUTE_6_TRAINER_3, 3, Route6BattleText4, Route6EndBattleText4, Route6AfterBattleText4
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_3, 0, Route6BattleText4, Route6EndBattleText4, Route6AfterBattleText4
 Route6TrainerHeader4:
-	trainer EVENT_BEAT_ROUTE_6_TRAINER_4, 3, Route6BattleText5, Route6EndBattleText5, Route6AfterBattleText5
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_4, 0, Route6BattleText5, Route6EndBattleText5, Route6AfterBattleText5
 Route6TrainerHeader5:
-	trainer EVENT_BEAT_ROUTE_6_TRAINER_5, 3, Route6BattleText6, Route6EndBattleText6, Route6AfterBattleText6
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_5, 0, Route6BattleText6, Route6EndBattleText6, Route6AfterBattleText6
 	db -1 ; end
 
 Route6Text1:
