@@ -169,7 +169,7 @@ TryingToLearn:
 	pop bc
 	pop de
 	ld a, d
-	jr c, .hm
+	; jr c, .hm  - not sure what all the stack fiddling is about, so I'll just comment out the jumping line
 	pop hl
 	add hl, bc
 	and a
