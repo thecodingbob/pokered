@@ -31,7 +31,7 @@ DontAbandonLearning:
 	push de
 	ld [wd11e], a
 	call GetMoveName
-	ld hl, OneTwoAndText
+	ld hl, ForgotAndText
 	call PrintText
 	pop de
 	pop hl
@@ -205,18 +205,6 @@ TryingToLearnText:
 	text_far _TryingToLearnText
 	text_end
 
-OneTwoAndText:
-	text_far _OneTwoAndText
-	text_pause
-	text_asm
-	ld a, SFX_SWAP
-	call PlaySoundWaitForCurrent
-	ld hl, PoofText
-	ret
-
-PoofText:
-	text_far _PoofText
-	text_pause
 ForgotAndText:
 	text_far _ForgotAndText
 	text_end

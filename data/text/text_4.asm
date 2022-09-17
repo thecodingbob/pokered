@@ -125,17 +125,7 @@ _TryingToLearnText::
 	text "?"
 	done
 
-_OneTwoAndText::
-	text "1, 2 and...@"
-	text_end
-
-_PoofText::
-	text " Poof!@"
-	text_end
-
 _ForgotAndText::
-	text_start
-	para "@"
 	text_ram wLearnMoveMonName
 	text " forgot"
 	line "@"
