@@ -1,14 +1,8 @@
 VermilionGym_Script:
 	ld hl, wCurrentMapScriptFlags
-	bit 5, [hl]
-	res 5, [hl]
-	push hl
-	call nz, .LoadNames
-	pop hl
 	bit 6, [hl]
 	res 6, [hl]
-	SetEvent EVENT_2ND_LOCK_OPENED ; skip puzzle
-	call nz, VermilionGymSetDoorTile
+	call nz, .LoadNames
 	call EnableAutoTextBoxDrawing
 	ld hl, VermilionGymTrainerHeaders
 	ld de, VermilionGym_ScriptPointers
@@ -27,20 +21,6 @@ VermilionGym_Script:
 
 .LeaderName:
 	db "LT.SURGE@"
-
-VermilionGymSetDoorTile:
-	CheckEvent EVENT_2ND_LOCK_OPENED
-	jr nz, .doorsOpen
-	ld a, $24 ; double door tile ID
-	jr .replaceTile
-.doorsOpen
-	ld a, SFX_GO_INSIDE
-	call PlaySound
-	ld a, $5 ; clear floor tile ID
-.replaceTile
-	ld [wNewTileBlockID], a
-	lb bc, 2, 2
-	predef_jump ReplaceTileBlock
 
 VermilionGymResetScripts:
 	xor a
@@ -103,11 +83,11 @@ VermilionGym_TextPointers:
 VermilionGymTrainerHeaders:
 	def_trainers 2
 VermilionGymTrainerHeader0:
-	trainer EVENT_BEAT_VERMILION_GYM_TRAINER_0, 3, VermilionGymBattleText1, VermilionGymEndBattleText1, VermilionGymAfterBattleText1
+	trainer EVENT_BEAT_VERMILION_GYM_TRAINER_0, 0, VermilionGymBattleText1, VermilionGymEndBattleText1, VermilionGymAfterBattleText1
 VermilionGymTrainerHeader1:
-	trainer EVENT_BEAT_VERMILION_GYM_TRAINER_1, 2, VermilionGymBattleText2, VermilionGymEndBattleText2, VermilionGymAfterBattleText2
+	trainer EVENT_BEAT_VERMILION_GYM_TRAINER_1, 0, VermilionGymBattleText2, VermilionGymEndBattleText2, VermilionGymAfterBattleText2
 VermilionGymTrainerHeader2:
-	trainer EVENT_BEAT_VERMILION_GYM_TRAINER_2, 3, VermilionGymBattleText3, VermilionGymEndBattleText3, VermilionGymAfterBattleText3
+	trainer EVENT_BEAT_VERMILION_GYM_TRAINER_2, 0, VermilionGymBattleText3, VermilionGymEndBattleText3, VermilionGymAfterBattleText3
 	db -1 ; end
 
 LTSurgeText:
