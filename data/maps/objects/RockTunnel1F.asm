@@ -6,7 +6,7 @@ RockTunnel1F_Object:
 	warp_event 15,  0, LAST_MAP, 2
 	warp_event 15, 33, LAST_MAP, 3
 	warp_event 15, 35, LAST_MAP, 3
-	warp_event 37,  3, VERMILION_CITY, 8
+	warp_event 37,  3, VERMILION_CITY, 4
 	warp_event  5,  3, ROCK_TUNNEL_B1F, 2
 	warp_event 17, 11, ROCK_TUNNEL_B1F, 3
 	warp_event 37,  5, LAVENDER_TOWN, 3

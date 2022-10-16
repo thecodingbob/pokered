@@ -17,3 +17,11 @@ _VermilionCityText3::
 	line "American!"
 	done
 
+_VermilionCityText4::
+	text "You look like"
+	line "someone who"
+	cont "didn't defeat"
+	cont "LT.SURGE and"
+	cont "<RIVAL> yet."
+
+	done

@@ -8,7 +8,7 @@ MapHSPointers:
 	dw PewterCityHS
 	dw CeruleanCityHS
 	dw NoHS
-	dw NoHS
+	dw VermilionCityHS
 	dw NoHS
 	dw NoHS
 	dw NoHS
@@ -276,6 +276,8 @@ CeruleanCityHS:
 	db CERULEAN_CITY, $06, SHOW
 	db CERULEAN_CITY, $0A, SHOW
 	db CERULEAN_CITY, $0B, SHOW
+VermilionCityHS:
+	db VERMILION_CITY, $06, SHOW
 SaffronCityHS:
 	db SAFFRON_CITY, $01, SHOW
 	db SAFFRON_CITY, $02, SHOW

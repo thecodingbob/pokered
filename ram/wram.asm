@@ -1975,6 +1975,7 @@ wRoute18CurScript:: db
 wRoute20CurScript:: db
 wSSAnneB1FRoomsCurScript:: db
 wVermilionCityCurScript:: db
+	ds 1
 wPokemonTower2FCurScript:: db
 wPokemonTower3FCurScript:: db
 wPokemonTower4FCurScript:: db
@@ -2036,7 +2037,7 @@ wSeafoamIslandsB3FCurScript:: db
 wRoute23CurScript:: db
 wSeafoamIslandsB4FCurScript:: db
 wRoute18Gate1FCurScript:: db
-	ds 78
+	ds 77
 wGameProgressFlagsEnd::
 
 	ds 56

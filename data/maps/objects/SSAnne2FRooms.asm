@@ -2,18 +2,8 @@ SSAnne2FRooms_Object:
 	db $c ; border block
 
 	def_warp_events
-	warp_event  2,  5, SS_ANNE_2F, 1
-	warp_event  3,  5, SS_ANNE_2F, 1
-	warp_event 12,  5, SS_ANNE_2F, 2
-	warp_event 13,  5, SS_ANNE_2F, 2
-	warp_event 22,  5, SS_ANNE_2F, 3
-	warp_event 23,  5, SS_ANNE_2F, 3
-	warp_event  2, 15, SS_ANNE_2F, 4
-	warp_event  3, 15, SS_ANNE_2F, 4
-	warp_event 12, 15, SS_ANNE_2F, 5
-	warp_event 13, 15, SS_ANNE_2F, 5
-	warp_event 22, 15, SS_ANNE_2F, 6
-	warp_event 23, 15, SS_ANNE_2F, 6
+	warp_event 12, 15, SS_ANNE_2F, 1
+	warp_event 13, 15, SS_ANNE_2F, 1
 
 	def_bg_events
 
@@ -26,7 +16,7 @@ SSAnne2FRooms_Object:
 	object_event 12, 11, SPRITE_POKE_BALL, STAY, NONE, 6, TM_BODY_SLAM
 	object_event 21,  2, SPRITE_GENTLEMAN, STAY, DOWN, 7 ; person
 	object_event 22,  1, SPRITE_GRAMPS, STAY, DOWN, 8 ; person
-	object_event 22, 11, SPRITE_POKE_BALL, STAY, NONE, 9, RARE_CANDY
+	object_event 10, 13, SPRITE_POKE_BALL, STAY, NONE, 9, RARE_CANDY
 	object_event 11,  4, SPRITE_GENTLEMAN, STAY, DOWN, 10 ; person
 	object_event  3,  4, SPRITE_LITTLE_BOY, STAY, NONE, 11 ; person
 	object_event 22,  3, SPRITE_BRUNETTE_GIRL, STAY, LEFT, 12 ; person

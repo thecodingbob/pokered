@@ -58,38 +58,30 @@ SSAnne2Script0:
 
 MovementData_6140c:
 	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db -1
+
+
 MovementData_6140d:
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
 	db -1 ; end
 
 CoordsData_61411:
-	dbmapcoord 36,  8
-	dbmapcoord 37,  8
+	dbmapcoord 28,  12
+	dbmapcoord 28,  13
 	db -1 ; end
 
-SSAnne2Script_61416:
-	ld a, [wXCoord]
-	cp 37
-	jr nz, .asm_61426
-	ld a, PLAYER_DIR_LEFT
-	ld [wPlayerMovingDirection], a
-	ld a, SPRITE_FACING_RIGHT
-	jr .asm_61427
-.asm_61426
-	xor a ; SPRITE_FACING_DOWN
-.asm_61427
-	ldh [hSpriteFacingDirection], a
-	ld a, $2
-	ldh [hSpriteIndex], a
-	jp SetSpriteFacingDirectionAndDelay
 
 SSAnne2Script1:
 	ld a, [wd730]
 	bit 0, a
 	ret nz
-	call SSAnne2Script_61416
 	xor a
 	ld [wJoyIgnore], a
 	ld a, $2
@@ -115,7 +107,6 @@ SSAnne2Script1:
 .done
 	ld [wTrainerNo], a
 
-	call SSAnne2Script_61416
 	ld a, $2
 	ld [wSSAnne2FCurScript], a
 	ret
@@ -124,7 +115,6 @@ SSAnne2Script2:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, SSAnne2Script_613ab
-	call SSAnne2Script_61416
 	ld a, $f0
 	ld [wJoyIgnore], a
 	ld a, $3
@@ -132,9 +122,10 @@ SSAnne2Script2:
 	call DisplayTextID
 	ld a, $2
 	ldh [hSpriteIndex], a
+	SetEvent EVENT_BEAT_SS_ANNE_RIVAL
 	call SetSpriteMovementBytesToFF
-	ld a, [wXCoord]
-	cp 37
+	ld a, [wYCoord]
+	cp 12
 	jr nz, .asm_61497
 	ld de, MovementData_614b9
 	jr .asm_6149a
@@ -153,13 +144,20 @@ SSAnne2Script2:
 	ret
 
 MovementData_614b7:
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db -1
 MovementData_614b9:
 	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
 	db -1 ; end
 
 SSAnne2Script3:
@@ -182,8 +180,7 @@ SSAnne2F_TextPointers:
 	dw SSAnne2Text3
 
 SSAnne2Text1:
-	text_far _SSAnne2Text1
-	text_end
+	; unused
 
 SSAnne2Text2:
 	text_asm

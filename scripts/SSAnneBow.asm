@@ -22,7 +22,7 @@ SSAnneBow_TextPointers:
 SSAnne5TrainerHeaders:
 	def_trainers 4
 SSAnne5TrainerHeader0:
-	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_0, 3, SSAnne5BattleText1, SSAnne5EndBattleText1, SSAnne5AfterBattleText1
+	trainer EVENT_BEAT_SS_ANNE_RIVAL, 3, SSAnne5BattleText1, SSAnne5EndBattleText1, SSAnne5AfterBattleText1
 SSAnne5TrainerHeader1:
 	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_1, 3, SSAnne5BattleText2, SSAnne5EndBattleText2, SSAnne5AfterBattleText2
 	db -1 ; end

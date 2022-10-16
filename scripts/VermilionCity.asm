@@ -6,6 +6,19 @@ VermilionCity_Script:
 
 
 VermilionCity_ScriptPointers:
+	dw VermilionCityBlockerGuyScript
+
+VermilionCityBlockerGuyScript:
+	CheckEvent EVENT_BEAT_LT_SURGE
+	ret z
+	CheckEvent EVENT_BEAT_SS_ANNE_RIVAL
+	ret z
+	ld a, HS_VERMILION_CITY_BLOCKER_GUY
+	ld [wMissableObjectIndex], a
+	predef HideObject
+
+	ret
+
 
 VermilionCity_TextPointers:
 	dw VermilionCityText1
@@ -13,6 +26,7 @@ VermilionCity_TextPointers:
 	dw PokeCenterSignText
 	dw VermilionCityText2
 	dw VermilionCityText3
+	dw VermilionCityText4
 
 VermilionCityText1:
 	text_far _VermilionCityText1
@@ -26,3 +40,6 @@ VermilionCityText3:
 	text_far _VermilionCityText3
 	text_end
 
+VermilionCityText4:
+	text_far _VermilionCityText4
+	text_end
