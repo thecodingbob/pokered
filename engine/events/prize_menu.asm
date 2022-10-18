@@ -1,13 +1,7 @@
 CeladonPrizeMenu::
-	ld b, COIN_CASE
-	call IsItemInBag
-	jr nz, .havingCoinCase
-	ld hl, RequireCoinCaseTextPtr
-	jp PrintText
-.havingCoinCase
 	ld hl, wd730
 	set 6, [hl] ; disable letter-printing delay
-	ld hl, ExchangeCoinsForPrizesTextPtr
+	ld hl, ExchangeMoneyForPrizesTextPtr
 	call PrintText
 ; the following are the menu settings
 	xor a
@@ -42,13 +36,8 @@ CeladonPrizeMenu::
 	res 6, [hl]
 	ret
 
-RequireCoinCaseTextPtr:
-	text_far _RequireCoinCaseText
-	text_waitbutton
-	text_end
-
-ExchangeCoinsForPrizesTextPtr:
-	text_far _ExchangeCoinsForPrizesText
+ExchangeMoneyForPrizesTextPtr:
+	text_far _ExchangeMoneyForPrizesText
 	text_end
 
 WhichPrizeTextPtr:
@@ -152,24 +141,23 @@ PrintPrizePrice:
 	call TextBoxBorder
 	call UpdateSprites
 	hlcoord 12, 0
-	ld de, .CoinString
+	ld de, .MoneyString
 	call PlaceString
-	hlcoord 13, 1
+	hlcoord 12, 1
 	ld de, .SixSpacesString
 	call PlaceString
-	hlcoord 13, 1
-	ld de, wPlayerCoins
-	ld c, %10000010
+	ld de, wPlayerMoney
+	ld c, $a3
 	call PrintBCDNumber
 	ret
 
-.CoinString:
-	db "COIN@"
+.MoneyString:
+	db "MONEY@"
 
 .SixSpacesString:
 	db "      @"
 
-LoadCoinsToSubtract:
+LoadMoneyToSubtract:
 	ld a, [wWhichPrize]
 	add a
 	ld d, 0
@@ -177,11 +165,11 @@ LoadCoinsToSubtract:
 	ld hl, wPrize1Price
 	add hl, de ; get selected prize's price
 	xor a
-	ldh [hUnusedCoinsByte], a
+	ldh [hMoney], a
 	ld a, [hli]
-	ldh [hCoins], a
+	ldh [hMoney + 1], a
 	ld a, [hl]
-	ldh [hCoins + 1], a
+	ldh [hMoney + 2], a
 	ret
 
 HandlePrizeChoice:
@@ -207,9 +195,9 @@ HandlePrizeChoice:
 	ld a, [wCurrentMenuItem] ; yes/no answer (Y=0, N=1)
 	and a
 	jr nz, .printOhFineThen
-	call LoadCoinsToSubtract
-	call HasEnoughCoins
-	jr c, .notEnoughCoins
+	call LoadMoneyToSubtract
+	call HasEnoughMoney
+	jr c, .notEnoughMoney
 	ld a, [wWhichPrizeWindow]
 	cp $02
 	jr nz, .giveMon
@@ -219,7 +207,7 @@ HandlePrizeChoice:
 	ld c, a
 	call GiveItem
 	jr nc, .bagFull
-	jr .subtractCoins
+	call .subtractMoney
 .giveMon
 	ld a, [wd11e]
 	ld [wcf91], a
@@ -241,18 +229,18 @@ HandlePrizeChoice:
 ; were full), return without subtracting coins.
 	ret nc
 
-.subtractCoins
-	call LoadCoinsToSubtract
-	ld hl, hCoins + 1
-	ld de, wPlayerCoins + 1
-	ld c, $02 ; how many bytes
+.subtractMoney
+	call LoadMoneyToSubtract
+	ld hl, hMoney + 2
+	ld de, wPlayerMoney + 2
+	ld c, $3 ; how many bytes
 	predef SubBCDPredef
 	jp PrintPrizePrice
 .bagFull
 	ld hl, PrizeRoomBagIsFullTextPtr
 	jp PrintText
-.notEnoughCoins
-	ld hl, SorryNeedMoreCoinsText
+.notEnoughMoney
+	ld hl, SorryNeedMoreMoneyText
 	jp PrintText
 .printOhFineThen
 	ld hl, OhFineThenTextPtr
@@ -271,8 +259,8 @@ SoYouWantPrizeTextPtr:
 	text_far _SoYouWantPrizeText
 	text_end
 
-SorryNeedMoreCoinsText:
-	text_far _SorryNeedMoreCoinsText
+SorryNeedMoreMoneyText:
+	text_far _SorryNeedMoreMoneyText
 	text_waitbutton
 	text_end
 

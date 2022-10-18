@@ -1615,9 +1615,9 @@ _RequireCoinCaseText::
 	line "required!@"
 	text_end
 
-_ExchangeCoinsForPrizesText::
+_ExchangeMoneyForPrizesText::
 	text "We exchange your"
-	line "coins for prizes."
+	line "money for prizes."
 	prompt
 
 _WhichPrizeText::
@@ -1636,9 +1636,9 @@ _SoYouWantPrizeText::
 	text "?"
 	done
 
-_SorryNeedMoreCoinsText::
+_SorryNeedMoreMoneyText::
 	text "Sorry, you need"
-	line "more coins.@"
+	line "more money.@"
 	text_end
 
 _OopsYouDontHaveEnoughRoomText::
