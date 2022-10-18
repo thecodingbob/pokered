@@ -1,12 +1,8 @@
 _CeladonPrizeRoomText1::
-	text "I sure do fancy"
-	line "that PORYGON!"
+	text "You can now buy"
+	line "prizes with"
+	cont "regular money!"
 
-	para "But, it's hard to"
-	line "win at slots!"
+	para "Screw the coins!"
 	done
 
-_CeladonPrizeRoomText2::
-	text "I had a major"
-	line "haul today!"
-	done
