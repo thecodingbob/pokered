@@ -2,9 +2,8 @@ RocketHideoutB4F_Object:
 	db $2e ; border block
 
 	def_warp_events
-	warp_event 19, 10, ROCKET_HIDEOUT_B3F, 2
-	warp_event 24, 15, GAME_CORNER, 3
-	warp_event 25, 15, GAME_CORNER, 3
+	warp_event 24, 15, CELADON_CITY, 5
+	warp_event 25, 15, CELADON_CITY, 5
 
 	def_bg_events
 

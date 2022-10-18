@@ -2,9 +2,8 @@ PowerPlant_Object:
 	db $2e ; border block
 
 	def_warp_events
-	warp_event  4, 35, LAST_MAP, 4
-	warp_event  5, 35, LAST_MAP, 4
-	warp_event  3,  5, SAFFRON_GYM, 19
+	warp_event  4, 35, LAST_MAP, 7
+	warp_event  5, 35, LAST_MAP, 7
 
 	def_bg_events
 
