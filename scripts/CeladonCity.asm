@@ -25,20 +25,14 @@ CeladonCity_TextPointers:
 	dw CeladonCityText18
 
 CeladonCityText1:
-	text_far _CeladonCityText1
-	text_end
 
 CeladonCityText2:
 	text_far _CeladonCityText2
 	text_end
 
 CeladonCityText3:
-	text_far _CeladonCityText3
-	text_end
 
 CeladonCityText4:
-	text_far _CeladonCityText4
-	text_end
 
 CeladonCityText5:
 	text_asm
@@ -81,27 +75,14 @@ TM41NoRoomText:
 	text_end
 
 CeladonCityText6:
-	text_far _CeladonCityText6
-	text_end
 
 CeladonCityText7:
-	text_far _CeladonCityText7
-	text_asm
-	ld a, POLIWRATH
-	call PlayCry
-	jp TextScriptEnd
 
 CeladonCityText8:
-	text_far _CeladonCityText8
-	text_end
 
 CeladonCityText9:
-	text_far _CeladonCityText9
-	text_end
 
 CeladonCityText10:
-	text_far _CeladonCityText10
-	text_end
 
 CeladonCityText11:
 	text_far _CeladonCityText11
@@ -124,8 +105,6 @@ CeladonCityText16:
 	text_end
 
 CeladonCityText17:
-	text_far _CeladonCityText17
-	text_end
 
 CeladonCityText18:
 	text_far _CeladonCityText18

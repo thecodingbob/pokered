@@ -23,10 +23,10 @@ CeladonCity_Object:
 	object_event 16, 16, SPRITE_LITTLE_GIRL, STAY, DOWN, 1 ; person
 	object_event 41, 20, SPRITE_GRAMPS, STAY, DOWN, 2 ; blocker guy
 	object_event  8, 23, SPRITE_GIRL, STAY, UP, 3 ; person
-	object_event 32, 16, SPRITE_GRAMPS, STAY, DOWN, 4 ; person
-	object_event 16, 23, SPRITE_GRAMPS, STAY, UP, 5 ; person
-	object_event 26, 23, SPRITE_FISHER, STAY, UP, 6 ; person
-	object_event 36, 23, SPRITE_MONSTER, STAY, UP, 7 ; person
+	object_event 22, 21, SPRITE_GRAMPS, STAY, UP, 4 ; person
+	object_event 22, 23, SPRITE_GRAMPS, STAY, UP, 5 ; person
+	object_event 36, 23, SPRITE_FISHER, STAY, UP, 6 ; person
+	object_event 32, 16, SPRITE_MONSTER, STAY, DOWN, 7 ; person
 	object_event 38, 16, SPRITE_ROCKET, STAY, DOWN, 8 ; person
 	object_event 44, 16, SPRITE_ROCKET, STAY, DOWN, 9 ; person
 
