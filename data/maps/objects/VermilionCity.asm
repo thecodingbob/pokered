@@ -5,7 +5,7 @@ VermilionCity_Object:
 	warp_event 11,  3, VERMILION_POKECENTER, 1
 	warp_event 15,  3, VERMILION_MART, 1
 	warp_event 26,  3, VERMILION_GYM, 1
-	warp_event 31,  3, ROCK_TUNNEL_1F, 5
+	warp_event 31,  3, ROCK_TUNNEL_1F, 1
 	warp_event  7,  3, SS_ANNE_2F, 2
 
 	def_bg_events
