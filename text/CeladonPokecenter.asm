@@ -1,12 +1,24 @@
-_CeladonPokecenterText2::
-	text "# FLUTE awakens"
-	line "#MON with a"
-	cont "sound that only"
-	cont "they can hear!"
+_EeveeGiverQuestionText::
+	text "Do you want an"
+	line "EEVEE?"
+
 	done
 
-_CeladonPokecenterText3::
-	text "I rode uphill on"
-	line "CYCLING ROAD from"
-	cont "FUCHSIA!"
+_EeveeGiverAlreadyGotText::
+	text "Do you want"
+	line "another EEVEE?"
+
+	done
+
+_EeveeGiverNoText::
+	text "Whatever."
+
+	done
+
+_EeeveeGiverMockText::
+	text "What, do you"
+	line "think I have"
+	cont "an EEVEE factory"
+	cont "or something?"
+
 	done
