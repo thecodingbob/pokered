@@ -8,13 +8,13 @@ NoThanksText:
 
 PrizeMenuMon1Entries:
 	db CLEFAIRY
-	db ABRA
+	db KADABRA
 	db DRATINI
 	db "@"
 
 PrizeMenuMon1Cost:
 	bcd2 1500
-	bcd2 3000
+	bcd2 7000
 	bcd2 9999
 	db "@"
 
@@ -25,9 +25,9 @@ PrizeMenuMon2Entries:
 	db "@"
 
 PrizeMenuMon2Cost:
+	bcd2 5000
 	bcd2 9999
-	bcd2 9999
-	bcd2 9999
+	bcd2 6000
 	db "@"
 
 PrizeMenuTMsEntries:
