@@ -1,5 +1,4 @@
 RocketHideoutB4F_Script:
-	call RocketHideout4Script_45473
 	call EnableAutoTextBoxDrawing
 	ld hl, RocketHideout4TrainerHeaders
 	ld de, RocketHideoutB4F_ScriptPointers
@@ -13,17 +12,6 @@ RocketHideout4Script_45473:
 	bit 5, [hl]
 	res 5, [hl]
 	ret z
-	CheckEvent EVENT_ROCKET_HIDEOUT_4_DOOR_UNLOCKED
-	jr nz, .asm_45496
-	CheckBothEventsSet EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_0, EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_1, 1
-	jr z, .asm_4548c
-	ld a, $2d
-	jr .asm_45498
-.asm_4548c
-	ld a, SFX_GO_INSIDE
-	call PlaySound
-	SetEvent EVENT_ROCKET_HIDEOUT_4_DOOR_UNLOCKED
-.asm_45496
 	ld a, $e
 .asm_45498
 	ld [wNewTileBlockID], a
