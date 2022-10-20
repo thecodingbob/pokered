@@ -293,8 +293,6 @@ CeladonPokecenterHiddenObjects:
 	db -1 ; end
 
 CeladonGymHiddenObjects:
-	hidden_object  3, 15, SPRITE_FACING_UP, GymStatues
-	hidden_object  6, 15, SPRITE_FACING_UP, GymStatues
 	db -1 ; end
 
 GameCornerHiddenObjects:

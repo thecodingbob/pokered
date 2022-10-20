@@ -1,64 +1,27 @@
 _ErikaPreBattleText::
-	text "Hello. Lovely"
-	line "weather isn't it?"
-	cont "It's so pleasant."
-
-	para "...Oh dear..."
-	line "I must have dozed"
-	cont "off. Welcome."
-
-	para "My name is ERIKA."
+	text "My name is ERIKA."
 	line "I am the LEADER"
 	cont "of CELADON GYM."
 
-	para "I teach the art of"
-	line "flower arranging."
-	cont "My #MON are of"
-	cont "the grass-type."
-
-	para "Oh, I'm sorry, I"
-	line "had no idea that"
-	cont "you wished to"
-	cont "challenge me."
-
-	para "Very well, but I"
-	line "shall not lose."
+	para "I shall not lose."
 	done
 
 _ReceivedRainbowBadgeText::
 	text "Oh!"
 	line "I concede defeat."
 
-	para "You are remarkably"
-	line "strong."
-
-	para "I must confer you"
-	line "the RAINBOWBADGE."
 	prompt
 
 _ErikaPostBattleAdviceText::
-	text "You are cataloging"
-	line "#MON? I must"
+	text "You are doing a"
+	line "BOSS RUSH? I must"
 	cont "say I'm impressed."
 
-	para "I would never"
-	line "collect #MON"
-	cont "if they were"
-	cont "unattractive."
 	done
 
 _ErikaRainbowBadgeInfoText::
-	text "The RAINBOWBADGE"
-	line "will make #MON"
-	cont "up to L50 obey."
-
-	para "It also allows"
-	line "#MON to use"
-	cont "STRENGTH in and"
-	cont "out of battle."
-
-	para "Please also take"
-	line "this with you."
+	text "Take this with"
+	line "you."
 	done
 
 _ReceivedTM21Text::
@@ -74,10 +37,6 @@ _TM21ExplanationText::
 	para "TM21 contains"
 	line "MEGA DRAIN."
 
-	para "Half the damage"
-	line "it inflicts is"
-	cont "drained to heal"
-	cont "your #MON!"
 	done
 
 _TM21NoRoomText::
@@ -88,8 +47,6 @@ _TM21NoRoomText::
 _CeladonGymBattleText2::
 	text "Hey!"
 
-	para "You are not"
-	line "allowed in here!"
 	done
 
 _CeladonGymEndBattleText2::
@@ -99,8 +56,6 @@ _CeladonGymEndBattleText2::
 
 _CeladonGymAfterBattleText2::
 	text "Bleaah!"
-	line "I hope ERIKA"
-	cont "wipes you out!"
 	done
 
 _CeladonGymBattleText3::
@@ -115,12 +70,11 @@ _CeladonGymEndBattleText3::
 
 _CeladonGymAfterBattleText3::
 	text "Grass-type #MON"
-	line "are tough against"
-	cont "the water-type!"
+	line "are..."
 
-	para "They also have an"
-	line "edge on rock and"
-	cont "ground #MON!"
+	para "Wait, why am I"
+	line "wasting time"
+	cont "with you?"
 	done
 
 _CeladonGymBattleText4::
@@ -135,16 +89,12 @@ _CeladonGymEndBattleText4::
 
 _CeladonGymAfterBattleText4::
 	text "Oh, you weren't"
-	line "peeping? We get a"
-	cont "lot of gawkers!"
+	line "peeping? Just"
+	cont "rushing you say?"
 	done
 
 _CeladonGymBattleText5::
-	text "Look at my grass"
-	line "#MON!"
-
-	para "They're so easy"
-	line "to raise!"
+	text "Look at my grass!"
 	done
 
 _CeladonGymEndBattleText5::
@@ -152,19 +102,16 @@ _CeladonGymEndBattleText5::
 	prompt
 
 _CeladonGymAfterBattleText5::
-	text "We only use grass-"
-	line "type #MON at"
-	cont "our GYM!"
+	text "Go touch some"
+	line "grass #MON!"
 
-	para "We also use them"
-	line "for making flower"
-	cont "arrangements!"
 	done
 
 _CeladonGymBattleText6::
-	text "Don't bring any"
-	line "bugs or fire"
-	cont "#MON in here!"
+	text "Bring a fire"
+	line "#MON if you"
+	cont "want to make"
+	cont "this quick!"
 	done
 
 _CeladonGymEndBattleText6::
@@ -173,16 +120,14 @@ _CeladonGymEndBattleText6::
 	prompt
 
 _CeladonGymAfterBattleText6::
-	text "Our LEADER, ERIKA,"
-	line "might be quiet,"
-	cont "but she's also"
-	cont "very skilled!"
+	text "We will ruin"
+	line "your time with"
+	cont "our status moves."
 	done
 
 _CeladonGymBattleText7::
 	text "Pleased to meet"
-	line "you. My hobby is"
-	cont "#MON training."
+	line "you."
 	done
 
 _CeladonGymEndBattleText7::
@@ -193,17 +138,13 @@ _CeladonGymEndBattleText7::
 _CeladonGymAfterBattleText7::
 	text "I have a blind"
 	line "date coming up."
-	cont "I have to learn"
-	cont "to be polite."
+
 	done
 
 _CeladonGymBattleText8::
 	text "Welcome to"
 	line "CELADON GYM!"
 
-	para "You better not"
-	line "underestimate"
-	cont "girl power!"
 	done
 
 _CeladonGymEndBattleText8::
@@ -215,6 +156,4 @@ _CeladonGymAfterBattleText8::
 	text "I didn't bring my"
 	line "best #MON!"
 
-	para "Wait 'til next"
-	line "time!"
 	done
