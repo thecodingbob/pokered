@@ -2,7 +2,7 @@ CeladonCity_Object:
 	db $f ; border block
 
 	def_warp_events
-	warp_event 28, 19, CELADON_MART_1F, 1
+	warp_event 28, 19, CELADON_MART_2F, 1
 	warp_event 19, 19, ROCK_TUNNEL_1F, 2
 	warp_event 23, 19, CELADON_POKECENTER, 1
 	warp_event 14, 19, CELADON_GYM, 1
