@@ -378,8 +378,13 @@ PrintListMenuEntries::
 	jr z, .pokemonPCMenu
 	cp MOVESLISTMENU
 	jr z, .movesMenu
+	cp POKEMONLIST
+	jr z, .pokemonMenu
 .itemMenu
 	call GetItemName
+	jr .placeNameString
+.pokemonMenu
+	call GetMonName
 	jr .placeNameString
 .pokemonPCMenu
 	push hl

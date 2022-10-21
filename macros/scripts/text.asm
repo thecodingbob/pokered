@@ -175,6 +175,16 @@ MACRO script_mart
 	db -1 ; end
 ENDM
 
+	const TX_SCRIPT_CHOOSE_PKM ; $fe
+MACRO script_choose_pkm
+	db TX_SCRIPT_CHOOSE_PKM
+	db _NARG ; number of items
+	IF _NARG
+		db \# ; all item ids
+	ENDC
+	db -1 ; end
+ENDM
+
 	const TX_SCRIPT_BILLS_PC ; $fd
 MACRO script_bills_pc
 	db TX_SCRIPT_BILLS_PC
