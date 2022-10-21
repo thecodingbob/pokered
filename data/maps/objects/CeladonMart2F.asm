@@ -13,6 +13,6 @@ CeladonMart2F_Object:
 	object_event  5,  3, SPRITE_CLERK, STAY, DOWN, 3 ; person
 	object_event  6,  3, SPRITE_CLERK, STAY, DOWN, 4 ; person
 	object_event  9,  6, SPRITE_CLERK, STAY, LEFT, 5 ; person
-	object_event  0,  5, SPRITE_LITTLE_GIRL, STAY, RIGHT, 5 ; person
+	object_event  0,  5, SPRITE_LITTLE_GIRL, STAY, RIGHT, 6 ; person
 
 	def_warps_to CELADON_MART_2F
