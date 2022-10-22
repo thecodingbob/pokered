@@ -1975,7 +1975,7 @@ wRoute18CurScript:: db
 wRoute20CurScript:: db
 wSSAnneB1FRoomsCurScript:: db
 wVermilionCityCurScript:: db
-	ds 1
+wCeladonCityCurScript:: db
 wPokemonTower2FCurScript:: db
 wPokemonTower3FCurScript:: db
 wPokemonTower4FCurScript:: db

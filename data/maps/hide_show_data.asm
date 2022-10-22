@@ -9,7 +9,7 @@ MapHSPointers:
 	dw CeruleanCityHS
 	dw NoHS
 	dw VermilionCityHS
-	dw NoHS
+	dw CeladonCityHS
 	dw NoHS
 	dw NoHS
 	dw NoHS
@@ -277,7 +277,9 @@ CeruleanCityHS:
 	db CERULEAN_CITY, $0A, SHOW
 	db CERULEAN_CITY, $0B, SHOW
 VermilionCityHS:
-	db VERMILION_CITY, $06, SHOW
+	db VERMILION_CITY, $06, SHOW; Blocker guy
+CeladonCityHS:
+	db CELADON_CITY, $02, SHOW ; Blocker guy
 SaffronCityHS:
 	db SAFFRON_CITY, $01, SHOW
 	db SAFFRON_CITY, $02, SHOW

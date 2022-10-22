@@ -2,6 +2,22 @@ CeladonCity_Script:
 	call EnableAutoTextBoxDrawing
 	ResetEvents EVENT_1BF
 	ResetEvent EVENT_67F
+	ld hl, CeladonCity_ScriptPointers
+	ld a, [wCeladonCityCurScript]
+	jp CallFunctionInTable
+
+CeladonCity_ScriptPointers:
+	dw CeladonCityBlockerGuyScript
+
+CeladonCityBlockerGuyScript:
+	CheckEvent EVENT_BEAT_ERIKA
+	ret z
+	CheckEvent EVENT_BEAT_ROCKET_HIDEOUT_GIOVANNI
+	ret z
+	ld a, HS_CELADON_CITY_BLOCKER_GUY
+	ld [wMissableObjectIndex], a
+	predef HideObject
+
 	ret
 
 CeladonCity_TextPointers:

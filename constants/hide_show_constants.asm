@@ -20,6 +20,7 @@ DEF SHOW EQU $15
 	const HS_CERULEAN_CAVE_GUY             ; 08
 	const HS_CERULEAN_GUARD_2              ; 09
 	const HS_VERMILION_CITY_BLOCKER_GUY
+	const HS_CELADON_CITY_BLOCKER_GUY
 	const HS_SAFFRON_CITY_1                ; 0A
 	const HS_SAFFRON_CITY_2                ; 0B
 	const HS_SAFFRON_CITY_3                ; 0C
