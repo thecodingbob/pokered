@@ -302,7 +302,13 @@ StartMenu_Map::
 	push af
 	xor a
 	ldh [hTileAnimations], a
+	call CheckIfInOutsideMap
+	jr z, .canFly
 	farcall DisplayTownMap
+	jp .done
+.canFly
+	call ChooseFlyDestination
+.done
 	call LoadFontTilePatterns
 	call LoadScreenTilesFromBuffer2 ; restore saved screen
 	call RunDefaultPaletteCommand
@@ -310,8 +316,10 @@ StartMenu_Map::
 	call LoadGBPal
 	pop af
 	ldh [hTileAnimations], a
+	ld a, [wd732]
+	bit 3, a ; did the player decide to fly?
+	jp nz, CloseStartMenu
 	jp RedisplayStartMenu
-
 	
 ItemMenuLoop:
 	call LoadScreenTilesFromBuffer2DisableBGTransfer ; restore saved screen
