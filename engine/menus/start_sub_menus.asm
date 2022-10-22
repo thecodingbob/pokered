@@ -295,10 +295,6 @@ ErasePartyMenuCursors::
 	jr nz, .loop
 	ret
 
-ItemMenuLoop:
-	call LoadScreenTilesFromBuffer2DisableBGTransfer ; restore saved screen
-	call RunDefaultPaletteCommand
-
 StartMenu_Map::
 	call ClearScreen
 	call UpdateSprites
@@ -315,6 +311,11 @@ StartMenu_Map::
 	pop af
 	ldh [hTileAnimations], a
 	jp RedisplayStartMenu
+
+	
+ItemMenuLoop:
+	call LoadScreenTilesFromBuffer2DisableBGTransfer ; restore saved screen
+	call RunDefaultPaletteCommand
 
 StartMenu_Item::
 	ld a, [wLinkState]
