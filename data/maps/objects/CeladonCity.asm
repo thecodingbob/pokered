@@ -8,7 +8,7 @@ CeladonCity_Object:
 	warp_event 14, 19, CELADON_GYM, 1
 	warp_event  5, 19, ROCKET_HIDEOUT_B4F, 1
 	warp_event 35, 19, GAME_CORNER_PRIZE_ROOM, 1
-	warp_event 41, 19, POWER_PLANT, 1
+	warp_event 41, 19, ROUTE_7_GATE, 1
 
 	def_bg_events
 	bg_event  3, 19, 11 ; CeladonCityText11

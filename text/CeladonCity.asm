@@ -34,9 +34,8 @@ _CeladonCityText15::
 	done
 
 _CeladonCityText16::
-	text "Warp to POWER"
-	line "PLANT and then"
-	cont "LAVENDER TOWN"
+	text "Warp to"
+	line "LAVENDER TOWN"
 	done
 
 _CeladonCityText18::
